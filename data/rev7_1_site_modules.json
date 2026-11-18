@@ -1,0 +1,457 @@
+{
+  "modelo": "FASE6_ETAPA3_REV7_1",
+  "envelope_mm": {
+    "x_mm": 294.0,
+    "y_mm": 436.0,
+    "z_mm": 624.9,
+    "x_range": [
+      -186.0,
+      108.0
+    ],
+    "y_range": [
+      -318.0,
+      118.0
+    ],
+    "z_range": [
+      0.0,
+      624.9
+    ],
+    "volume_bruto_L": 80.1,
+    "volume_livre_interno_exato_L": 57.414
+  },
+  "regimes_massa_kg": {
+    "leve_pos_etapa3": {
+      "kg": 9.397,
+      "n": 92.16
+    },
+    "nominal_rev7": {
+      "kg": 10.845,
+      "n": 106.35
+    },
+    "conservador_projeto": {
+      "kg": 13.634,
+      "n": 133.7
+    }
+  },
+  "auditoria_resumo": {
+    "bfs_firmes": "795/800",
+    "fdm_topologia_ok": "505/505 (nm=0, non_exempt_multi=0)",
+    "colisoes_non_nominal": 0,
+    "cinematica": "7/7 cursos limpos",
+    "rf_min_metal_mm": 34.52,
+    "rf_min_cf_mm": 30.44,
+    "ray_leaks_8cams": 0,
+    "tombamento_min_deg": 16.34,
+    "termica_areas_cm2": {
+      "Plinto_Frestas_Perimetrais_cm2": 86.16,
+      "Plinto_Labirinto_Chicane_Interna_cm2": 68.41,
+      "Plinto_Gargalo_Efetivo_cm2": 68.41,
+      "PisoBasal_Janela_Bruta_cm2": 127.92,
+      "PisoBasal_Janela_Tela_Basal_efetiva_cm2": 78.08,
+      "ColF_Frisos_Chevron_MOD1_MOD3_T1T2_cm2": 61.07,
+      "ColF_Frisos_Chevron_MOD4_T3T4_cm2": 41.56,
+      "MOD4_MANUT_Filtro_Frontal_cm2": 76.44,
+      "MOD3_Deck_PortaL_cm2": 41.9,
+      "MOD3_Coletor_Deck_e_Chamine_ByPass_cm2": 32.67,
+      "Topo_Porta_MOD3_Chamine_cm2": 32.67,
+      "Topo_Portas_MOD4_GPU_CPU_cm2": 99.05,
+      "MOD4_Coletores_Adiabaticos_Livres_cm2": 98.64,
+      "Topo_Fresta_8mm_MOD3_bruta_cm2": 29.45,
+      "Topo_Fresta_8mm_MOD3_isolada_cm2": 26.45,
+      "Topo_MOD3_Transf_FEsq_MEsq_cm2": 6.14,
+      "Topo_MOD3_Transf_MEsq_REsq_cm2": 0.0,
+      "Topo_Fresta_8mm_MOD4_isolada_cm2": 59.81
+    },
+    "pq_mod3": {
+      "metodo": "ESTIMATIVA_ANALITICA_DARCY_FAN_PQ (curva nominal FAN 8015 5V: 22.8 CFM / 11.8 Pa)",
+      "fan_8015_free_CFM": 22.8,
+      "fan_8015_shutoff_Pa": 11.8,
+      "A_ref_chamine_cm2": 32.67,
+      "D_h_chamine_mm": 29.7,
+      "K_breakdown_ref": {
+        "K_plinto_labirinto": 0.502,
+        "K_tela_basal": 0.059,
+        "K_coletor_curva_deck": 1.8,
+        "K_atrito_chamine": 0.245,
+        "K_saida_topo_fresta8mm": 2.754
+      },
+      "Sigma_K_ref": 5.36,
+      "operating_point_CFM": 11.61,
+      "operating_pressure_drop_Pa": 8.74,
+      "neck_velocity_m_s": 1.68,
+      "predicted_air_deltaT_at_22W_C": 3.44,
+      "predicted_air_deltaT_at_35W_C": 5.47,
+      "sensitivity_matrix": [
+        {
+          "fan_speed_pct": 100,
+          "Sigma_K_ref": 5.36,
+          "operating_point_CFM": 11.61,
+          "operating_pressure_drop_Pa": 8.74,
+          "neck_velocity_m_s": 1.68,
+          "deltaT_ar_22W_C": 3.44,
+          "deltaT_ar_35W_C": 5.47
+        },
+        {
+          "fan_speed_pct": 70,
+          "Sigma_K_ref": 5.36,
+          "operating_point_CFM": 8.13,
+          "operating_pressure_drop_Pa": 4.28,
+          "neck_velocity_m_s": 1.17,
+          "deltaT_ar_22W_C": 4.92,
+          "deltaT_ar_35W_C": 7.82
+        },
+        {
+          "fan_speed_pct": 50,
+          "Sigma_K_ref": 5.36,
+          "operating_point_CFM": 5.8,
+          "operating_pressure_drop_Pa": 2.19,
+          "neck_velocity_m_s": 0.84,
+          "deltaT_ar_22W_C": 6.88,
+          "deltaT_ar_35W_C": 10.95
+        },
+        {
+          "fan_speed_pct": 100,
+          "Sigma_K_ref": 7.36,
+          "operating_point_CFM": 10.27,
+          "operating_pressure_drop_Pa": 9.4,
+          "neck_velocity_m_s": 1.48,
+          "deltaT_ar_22W_C": 3.89,
+          "deltaT_ar_35W_C": 6.19
+        },
+        {
+          "fan_speed_pct": 70,
+          "Sigma_K_ref": 7.36,
+          "operating_point_CFM": 7.19,
+          "operating_pressure_drop_Pa": 4.61,
+          "neck_velocity_m_s": 1.04,
+          "deltaT_ar_22W_C": 5.55,
+          "deltaT_ar_35W_C": 8.84
+        },
+        {
+          "fan_speed_pct": 50,
+          "Sigma_K_ref": 7.36,
+          "operating_point_CFM": 5.14,
+          "operating_pressure_drop_Pa": 2.35,
+          "neck_velocity_m_s": 0.74,
+          "deltaT_ar_22W_C": 7.78,
+          "deltaT_ar_35W_C": 12.37
+        }
+      ],
+      "deltaT_8C_analise_e_regime_minimo": "Fresta topo MOD3 ampliada de 19.87 para corredor esquerdo completo reduziu K_saida_topo_fresta8mm (~4.11 -> ~1.9). Em 22 W nominais TODOS os pontos (100/70/50% nom e K+2) permanecem <= 8.0 C. Em pico maximo de 35 W na fonte, 100% (nom e K+2) e 70% nom operam <= 8.0 C; 50% (meia rotacao) e 70% com K+2 excedem 8.0 C, definindo rotacao minima >= 75-100% na alimentacao dedicada 5V 24/7 para carga maxima de 35 W.",
+      "recirculation_status": "ISOLADO_3D (Chamine selada no MOD4 + baffle FAN1 + divisor continuo no topo 8mm X=-57..-54.5)"
+    },
+    "pq_mod4": {
+      "metodo_e_validade": "ESTIMATIVA_ANALITICA_POR_PREMISSA (assume curva de referencia para o par de blowers centrifugas OEM LA-L161P: 26.0 CFM livres totais / 130 Pa shutoff — NAO validado por curva de fabrica ou ensaio em bancada; serve exclusivamente para verificar se o involucro acrescenta contrapressao <= 5% da capacidade).",
+      "A_admissao_total_MOD4_cm2": 118.0,
+      "A_coletores_MOD4_cm2": 98.64,
+      "A_portas_topo_GPU_CPU_cm2": 99.05,
+      "A_fresta_8mm_MOD4_cm2": 59.81,
+      "A_ref_MOD4_cm2": 98.64,
+      "Sigma_K_ref_MOD4": 5.95,
+      "blower_dual_ref_CFM_Pa": [
+        26.0,
+        130.0
+      ],
+      "contrapressao_estimada_100pct_Pa": 5.13,
+      "fracao_shutoff_estimada_pct": 3.95,
+      "clearance_defletores_admissao_blowers_status": "Admissao via Filtro Frontal (76.4cm2) + ColF T3T4 45deg (>=40cm2) sem restricao no intake; jatos canalizados pelos 2 coletores adiabaticos (98.6cm2) c/ folga contrapressao <= 5% estimada.",
+      "sensitivity_matrix": [
+        {
+          "blower_speed_pct": 100,
+          "Sigma_K_ref_MOD4": 5.95,
+          "flow_CFM": 25.48,
+          "enclosure_backpressure_Pa": 5.13,
+          "deltaT_ar_35W_C": 2.49,
+          "deltaT_ar_65W_C": 4.63
+        },
+        {
+          "blower_speed_pct": 70,
+          "Sigma_K_ref_MOD4": 5.95,
+          "flow_CFM": 17.84,
+          "enclosure_backpressure_Pa": 2.51,
+          "deltaT_ar_35W_C": 3.56,
+          "deltaT_ar_65W_C": 6.62
+        },
+        {
+          "blower_speed_pct": 50,
+          "Sigma_K_ref_MOD4": 5.95,
+          "flow_CFM": 12.74,
+          "enclosure_backpressure_Pa": 1.28,
+          "deltaT_ar_35W_C": 4.99,
+          "deltaT_ar_65W_C": 9.26
+        },
+        {
+          "blower_speed_pct": 100,
+          "Sigma_K_ref_MOD4": 7.95,
+          "flow_CFM": 25.31,
+          "enclosure_backpressure_Pa": 6.76,
+          "deltaT_ar_35W_C": 2.51,
+          "deltaT_ar_65W_C": 4.66
+        },
+        {
+          "blower_speed_pct": 70,
+          "Sigma_K_ref_MOD4": 7.95,
+          "flow_CFM": 17.72,
+          "enclosure_backpressure_Pa": 3.31,
+          "deltaT_ar_35W_C": 3.59,
+          "deltaT_ar_65W_C": 6.66
+        },
+        {
+          "blower_speed_pct": 50,
+          "Sigma_K_ref_MOD4": 7.95,
+          "flow_CFM": 12.66,
+          "enclosure_backpressure_Pa": 1.69,
+          "deltaT_ar_35W_C": 5.02,
+          "deltaT_ar_65W_C": 9.32
+        }
+      ]
+    },
+    "eletrica": {
+      "jusbc1_status": "EXCLUSIVO_HUB_USBC (LA-L161P Sheet 42 UT4/UT5 protegido)",
+      "coolers_power_baseline": "TOMADA_2_ICLAMPER_FONTE_USB_5V_DEDICADA (5V >= 2.0A, operando 24/7 independente de S3/S5 do notebook)",
+      "validation_gates_before_manufacture": [
+        "1. Definir modelo comercial certificado ANATEL/INMETRO da fonte USB 5V >= 2.0A e medir dimensoes reais vs folgas adjacentes (6.11 mm p/ WallWart 9V e 7.77 mm p/ Plugue 90G no iCLAMPER).",
+        "2. Medir corrente individual nominal e pico de inrush de partida simultanea dos 2 coolers 80x80x15 5V selecionados com alicate/osciloscopio (confirmar pico combinado < 1.6 A dentro do limite de OCP da fonte).",
+        "3. Verificar regulacao Vout sob carga nominal (~4.85-5.15 V) e temperatura em regime permanente de 2h com caixa fechada."
+      ]
+    }
+  },
+  "pendencias_validacao_fisica": [
+    "Aferição física com paquímetro dos itens PROVISORIO_* (Hub USB-C 115×44×16, SSD 2,5\" 100×70×9,5, Fonte Lenovo 135 W + posição C5, Bateria 212×68×9,5, Fonte 5V>=2A Tomada 2 folgas 6,11/7,77 mm, Coolers 80×80×15, altura das 4 antenas MR30G, espessura real dos blowers LA-L161P e folgas JSSD2/RAM).",
+    "Ensaio elétrico em bancada: corrente nominal + pico simultâneo de inrush (<1,6 A) dos 2 coolers na fonte 5 V da Tomada 2 e estabilidade Vout em regime permanente (2 h).",
+    "Ensaio térmico físico com termopares + teste de fumaça: levantamento real da curva P-Q dos blowers LA-L161P (26 CFM / 130 Pa no modelo é apenas premissa analítica) e validação da rotação >= 75–100% em MOD3 para pico de 35 W.",
+    "Validação de material/fluência em lote real: ficha técnica (TDS) do filamento escolhido (PC sem carga, PC-FR, PC-ABS FR, PETG-CF) para confirmar E_creep_1000h = 630 MPa e teste de deslizamento em canal com folga de 0,25 mm."
+  ],
+  "modulos": {
+    "PLINTO_BASE": {
+      "label": "Plinto Basal & Admissão Inferior",
+      "short": "Plinto / Base",
+      "color": "#4F5D75",
+      "z_range_mm": [
+        0.0,
+        24.5
+      ],
+      "summary": "Base flutuante com sapatas estruturais de apoio ao piso, 31 frestas perimetrais, labirinto óptico em chicane e cartucho/tela filtrante basal (78,08 cm² efetivos).",
+      "contagem_objetos_cena": 47,
+      "contagem_fdm": 46,
+      "conjunto_bbox_mm": {
+        "x0": -180.0,
+        "x1": 86.0,
+        "y0": -308.0,
+        "y1": 108.0,
+        "z0": 0.0,
+        "z1": 24.5,
+        "dx": 266.0,
+        "dy": 416.0,
+        "dz": 24.5
+      }
+    },
+    "MOD1_MR30G": {
+      "label": "MOD1 — Roteador Mercusys MR30G & Baía RF",
+      "short": "MOD1 · MR30G",
+      "color": "#0F766E",
+      "z_range_mm": [
+        19.5,
+        231.3
+      ],
+      "summary": "Gaveta frontal (+125 mm +X) em trilhos telescópicos 3 estágios de policarbonato sem carga, abrigando o roteador MR30G em orientação O1, baía aberta RF e fendas U para as 4 antenas.",
+      "contagem_objetos_cena": 99,
+      "contagem_fdm": 63,
+      "conjunto_bbox_mm": {
+        "x0": -97.1,
+        "x1": 108.0,
+        "y0": -125.5,
+        "y1": 116.6,
+        "z0": 19.5,
+        "z1": 360.8,
+        "dx": 205.1,
+        "dy": 242.1,
+        "dz": 341.3
+      }
+    },
+    "MOD2_ONT": {
+      "label": "MOD2 — ONT Fibra Optica FD511G",
+      "short": "MOD2 · ONT",
+      "color": "#0369A1",
+      "z_range_mm": [
+        91.5,
+        122.4
+      ],
+      "summary": "Gaveta lateral (+115 mm +Y) em trilhos 3 estágios PETG-CF acima de MOD1, acomodando a ONT FD511G com porta óptica SC/APC verde, LAN e alimentação 12 V.",
+      "contagem_objetos_cena": 29,
+      "contagem_fdm": 10,
+      "conjunto_bbox_mm": {
+        "x0": -161.8,
+        "x1": 32.0,
+        "y0": -104.0,
+        "y1": 32.0,
+        "z0": 91.5,
+        "z1": 122.4,
+        "dx": 193.8,
+        "dy": 136.0,
+        "dz": 30.9
+      }
+    },
+    "MOD3_ENERGIA": {
+      "label": "MOD3 — Energia, Fontes, Coolers & Chaminé",
+      "short": "MOD3 · Energia",
+      "color": "#B45309",
+      "z_range_mm": [
+        190.8,
+        360.0
+      ],
+      "summary": "Compartimento elétrico em PC-FR UL94 V-0 e PC-ABS FR UL94 V-0: filtro iCLAMPER Energia 5 (+200 mm +Y), adaptadores 9V/12V/5V provisórios, Fonte Lenovo 135 W (-150 mm -Y), FAN1/FAN2 80×80×15 e chaminé térmica isolada até o topo.",
+      "contagem_objetos_cena": 114,
+      "contagem_fdm": 55,
+      "conjunto_bbox_mm": {
+        "x0": -180.5,
+        "x1": 103.8,
+        "y0": -297.5,
+        "y1": 113.8,
+        "z0": 190.8,
+        "z1": 603.8,
+        "dx": 284.3,
+        "dy": 411.3,
+        "dz": 413.0
+      }
+    },
+    "MOD4_VPS": {
+      "label": "MOD4 — Servidor VPS GOG10 LA-L161P & Expansão",
+      "short": "MOD4 · VPS Core",
+      "color": "#4338CA",
+      "z_range_mm": [
+        360.0,
+        591.8
+      ],
+      "summary": "Andar superior com cassete bipartido (-120 mm -X) sobre patins 40 mm e tala inox, placa-mãe GOG10 LA-L161P em 8 standoffs reais, bateria provisória, filtro frontal, coletores adiabáticos, gaveta Hub USB-C (-125 mm -X) e SSD 2,5\" (-125 mm -X).",
+      "contagem_objetos_cena": 130,
+      "contagem_fdm": 74,
+      "conjunto_bbox_mm": {
+        "x0": -178.0,
+        "x1": 32.0,
+        "y0": -271.9,
+        "y1": 111.5,
+        "z0": 360.0,
+        "z1": 591.8,
+        "dx": 210.0,
+        "dy": 383.4,
+        "dz": 231.8
+      }
+    },
+    "ESQ_ESTRUTURA": {
+      "label": "Esqueleto Estrutural & Fixações Mecânicas",
+      "short": "Esqueleto / ESQ",
+      "color": "#334155",
+      "z_range_mm": [
+        24.4,
+        596.5
+      ],
+      "summary": "26 colunas estruturais individualizadas (T1=7, T2=7, T3=6, T4=6), sapatas, longarinas, travessas, vigas de reforço, Viga Arco superior, talas com insertos de latão M2.5/M3, pinos inox e fechos push-latch.",
+      "contagem_objetos_cena": 232,
+      "contagem_fdm": 108,
+      "conjunto_bbox_mm": {
+        "x0": -184.3,
+        "x1": 106.3,
+        "y0": -314.0,
+        "y1": 114.2,
+        "z0": 24.4,
+        "z1": 596.5,
+        "dx": 290.6,
+        "dy": 428.2,
+        "dz": 572.1
+      }
+    },
+    "CARENAGEM_PELE": {
+      "label": "Carenagem Externa Modular (#ECEAE4)",
+      "short": "Carenagem / Pele",
+      "color": "#78716C",
+      "z_range_mm": [
+        21.0,
+        624.9
+      ],
+      "summary": "Revestimento estético destacável em camadas com grade 3×4 assimétrica, 5 frisos cápsula frontais ColF, 2 portas traseiras clique (-X), painéis laterais lisos, almas estruturais internas e laje superior.",
+      "contagem_objetos_cena": 119,
+      "contagem_fdm": 119,
+      "conjunto_bbox_mm": {
+        "x0": -186.0,
+        "x1": 108.0,
+        "y0": -318.0,
+        "y1": 118.0,
+        "z0": 21.0,
+        "z1": 624.9,
+        "dx": 294.0,
+        "dy": 436.0,
+        "dz": 603.9
+      }
+    },
+    "TERMO_ENVOLTORIA": {
+      "label": "Plenums Chevron, Labirinto Topo & Frestas 8 mm",
+      "short": "Térmica Envoltória",
+      "color": "#0284C7",
+      "z_range_mm": [
+        55.3,
+        604.1
+      ],
+      "summary": "Telas hexagonais frontais ColF, aletas chevron 45° bloqueadoras de luz em T1..T4, plataforma labirinto superior GPU/CPU (99,05 cm²) e canais perimetrais de exaustão 8 mm.",
+      "contagem_objetos_cena": 30,
+      "contagem_fdm": 30,
+      "conjunto_bbox_mm": {
+        "x0": -172.8,
+        "x1": 103.8,
+        "y0": -304.8,
+        "y1": 105.0,
+        "z0": 55.3,
+        "z1": 604.1,
+        "dx": 276.6,
+        "dy": 409.8,
+        "dz": 548.8
+      }
+    },
+    "CABOS_CONECTIVIDADE": {
+      "label": "Roteamento Interno de Cabos & Fibra",
+      "short": "Cabos & Fibra",
+      "color": "#0D9488",
+      "z_range_mm": [
+        14.0,
+        447.0
+      ],
+      "summary": "13 condutores internos roteados em curvas 3D (entrada AC única pela gola traseira, chicotes DC, fibra óptica, Ethernet LAN/WAN, SATA, USB-C, HDMI de manutenção e barramento 5 V dos coolers).",
+      "contagem_objetos_cena": 13,
+      "contagem_fdm": 0,
+      "conjunto_bbox_mm": {
+        "x0": -158.0,
+        "x1": 85.5,
+        "y0": -222.0,
+        "y1": 104.0,
+        "z0": 14.0,
+        "z1": 447.0,
+        "dx": 243.5,
+        "dy": 326.0,
+        "dz": 433.0
+      }
+    },
+    "MOD4_VPS_REF": {
+      "label": "Volumes de Referência & Keepout (Pendentes)",
+      "short": "Refs Keepout",
+      "color": "#DC2626",
+      "z_range_mm": [
+        400.5,
+        522.0
+      ],
+      "summary": "3 volumes de reserva de folga geométrica (blowers, M.2 e RAM) mantidos fora da BOM para sinalizar regiões que dependem de aferição no paquímetro.",
+      "contagem_objetos_cena": 3,
+      "contagem_fdm": 0,
+      "conjunto_bbox_mm": {
+        "x0": -25.0,
+        "x1": -16.0,
+        "y0": -267.2,
+        "y1": 44.0,
+        "z0": 400.5,
+        "z1": 522.0,
+        "dx": 9.0,
+        "dy": 311.2,
+        "dz": 121.5
+      }
+    }
+  }
+}

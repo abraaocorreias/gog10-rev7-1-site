@@ -1,0 +1,1648 @@
+{
+  "arquivo_blender_origem": "/Users/abraao/.gemini/antigravity/scratch/gabinete_gog10/FASE6_ETAPA3_REV7_1.blend",
+  "arquivo_original_modificado": false,
+  "total_renders_fotorrealistas": 30,
+  "total_renders_tecnicos": 30,
+  "vistas": [
+    {
+      "vista_num": 1,
+      "vista_id": "V01",
+      "foto_arquivo": "renders/externo/01_vista_frontal_completa.png",
+      "tecnica_arquivo": "renders/externo/01_vista_frontal_completa_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          1120.0,
+          -100.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "PELE_F6_Front_Lisa_T3_ColM",
+        "PELE_F6_Baia_FrenteGaveta_MR30G",
+        "MR30G_Antenna_Side_Left",
+        "PELE_F6_LajeTopo_21mm_F_Dir"
+      ]
+    },
+    {
+      "vista_num": 2,
+      "vista_id": "V02",
+      "foto_arquivo": "renders/externo/02_vista_traseira_completa.png",
+      "tecnica_arquivo": "renders/externo/02_vista_traseira_completa_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -1200.0,
+          -100.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_Rear_Painel_T2_ColM",
+        "PELE_F6_PortaClic_Rear_T3_Hub",
+        "PELE_F6_PortaClic_Rear_T1_Cabos",
+        "PELE_F6_LajeTopo_21mm_R_Esq",
+        "BAIA_Gola_Plinto_Rear_Cabos"
+      ]
+    },
+    {
+      "vista_num": 3,
+      "vista_id": "V03",
+      "foto_arquivo": "renders/externo/03_vista_lateral_esquerda.png",
+      "tecnica_arquivo": "renders/externo/03_vista_lateral_esquerda_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -39.0,
+          -1120.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_LatNegY_T2_ColD",
+        "PELE_F6_LatNegY_T3_ColE",
+        "PELE_F6_FrestaExaustao_8mm_M_Esq",
+        "PELE_F6_Plinto_Fresta13mm_F_Esq"
+      ]
+    },
+    {
+      "vista_num": 4,
+      "vista_id": "V04",
+      "foto_arquivo": "renders/externo/04_vista_lateral_direita.png",
+      "tecnica_arquivo": "renders/externo/04_vista_lateral_direita_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -39.0,
+          940.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_LatPosY_T2_ColD",
+        "PELE_F6_LatPosY_BayWrap_T1",
+        "PELE_F6_Baia_FrenteBandeja_CornerRear",
+        "BAIA_FundoPreto_BayWall_Corner_Sup"
+      ]
+    },
+    {
+      "vista_num": 5,
+      "vista_id": "V05",
+      "foto_arquivo": "renders/externo/05_vista_superior_isometrica_externa.png",
+      "tecnica_arquivo": "renders/externo/05_vista_superior_isometrica_externa_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          820.0,
+          -960.0,
+          790.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          320.0
+        ],
+        "lens_mm": 38.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1187.5
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_LajeTopo_21mm_F_Dir",
+        "PELE_F6_Front_5Frisos_T3_ColF",
+        "MR30G_Top_Wings",
+        "PELE_F6_LatNegY_T2_ColD"
+      ]
+    },
+    {
+      "vista_num": 6,
+      "vista_id": "V06",
+      "foto_arquivo": "renders/interno/06_isometrica_carenagem_removida.png",
+      "tecnica_arquivo": "renders/interno/06_isometrica_carenagem_removida_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -820.0,
+          -860.0,
+          560.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          310.0
+        ],
+        "lens_mm": 36.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1070.1
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 641,
+      "objetos_ocultos_count": 176,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "ESQ_Piso_Balanco_Estrutural_Front_Esq",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "EXTRAIDO_VPS_MB_LA_L161P_PCB",
+        "CERTIFICADO_iCLAMPER_Energia5_Branco_Corpo",
+        "MR30G_Lower_Chassis"
+      ]
+    },
+    {
+      "vista_num": 7,
+      "vista_id": "V07",
+      "foto_arquivo": "renders/interno/07_frontal_arquitetura_interna.png",
+      "tecnica_arquivo": "renders/interno/07_frontal_arquitetura_interna_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          980.0,
+          -100.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 771,
+      "objetos_ocultos_count": 46,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MANUT_Filtro_Frontal_VPS_Moldura",
+        "MOD3_Parede_Blindagem_UL94_V0_Lateral",
+        "MR30G_Top_Wings",
+        "ESQ_Col_Front_Dir_T2"
+      ]
+    },
+    {
+      "vista_num": 8,
+      "vista_id": "V08",
+      "foto_arquivo": "renders/interno/08_traseira_arquitetura_interna.png",
+      "tecnica_arquivo": "renders/interno/08_traseira_arquitetura_interna_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -980.0,
+          -100.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 776,
+      "objetos_ocultos_count": 41,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PROVISORIO_Hub_USBC_Periferico_115x44x16",
+        "PROVISORIO_SSD_25_SATA_Case_100x70x9_5",
+        "ETAPA2_Botao_Power_Rear_SW1",
+        "FAN1_80x80x15_5V_LateralEsq_Moldura",
+        "MOD2_Gaveta_ONT_Bandeja"
+      ]
+    },
+    {
+      "vista_num": 9,
+      "vista_id": "V09",
+      "foto_arquivo": "renders/interno/09_superior_disposicao_modulos.png",
+      "tecnica_arquivo": "renders/interno/09_superior_disposicao_modulos_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -39.0,
+          -100.0,
+          1280.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.0
+        ],
+        "lens_mm": 55.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 686.0
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 786,
+      "objetos_ocultos_count": 31,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "ESQ_Viga_Arco_MOD4_Top_Esq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "MR30G_Antenna_Rear_Left"
+      ]
+    },
+    {
+      "vista_num": 10,
+      "vista_id": "V10",
+      "foto_arquivo": "renders/interno/10_corte_longitudinal_lateral.png",
+      "tecnica_arquivo": "renders/interno/10_corte_longitudinal_lateral_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -39.0,
+          -1080.0,
+          312.5
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 983.2
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 783,
+      "objetos_ocultos_count": 34,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "ESQ_Sapata_Plinto_Front_Esq",
+        "MOD1_Corredica_Fixa_Front",
+        "PROVISORIO_Fonte_Lenovo_135W_GX20Z46266_22x118x77",
+        "ESQ_Piso_Balanco_Estrutural_Front_Esq",
+        "EXTRAIDO_VPS_MB_LA_L161P_PCB"
+      ]
+    },
+    {
+      "vista_num": 11,
+      "vista_id": "V11",
+      "foto_arquivo": "renders/modulos/11_mod1_mercusys_mr30g.png",
+      "tecnica_arquivo": "renders/modulos/11_mod1_mercusys_mr30g_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          440.0,
+          -310.0,
+          235.0
+        ],
+        "target_mm": [
+          35.0,
+          -10.0,
+          50.0
+        ],
+        "lens_mm": 35.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 769,
+      "objetos_ocultos_count": 48,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MR30G_Lower_Chassis",
+        "BAIA_PisoPreto_Fixo_4FendasU",
+        "PLUG_COMERCIAL_RJ45_90G_MR30G_LAN1",
+        "MOD1_Corredica_Bandeja_Front",
+        "BAIA_GavetaColarFront_Preto"
+      ]
+    },
+    {
+      "vista_num": 12,
+      "vista_id": "V12",
+      "foto_arquivo": "renders/modulos/12_mod2_ont_fd511g.png",
+      "tecnica_arquivo": "renders/modulos/12_mod2_ont_fd511g_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -240.0,
+          340.0,
+          195.0
+        ],
+        "target_mm": [
+          -48.0,
+          -50.0,
+          108.0
+        ],
+        "lens_mm": 35.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 754,
+      "objetos_ocultos_count": 63,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "ONT_FD511G_CorpoBranco",
+        "ONT_FD511G_Porta_PON_Verde",
+        "MOD2_Gaveta_ONT_Bandeja",
+        "MOD2_Trilho_Intermed_ONT_Dir",
+        "MOD2_Trilho_Transversal_Apoio_Front"
+      ]
+    },
+    {
+      "vista_num": 13,
+      "vista_id": "V13",
+      "foto_arquivo": "renders/modulos/13_mod3_fontes_eletrica_ventilacao.png",
+      "tecnica_arquivo": "renders/modulos/13_mod3_fontes_eletrica_ventilacao_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -460.0,
+          -450.0,
+          325.0
+        ],
+        "target_mm": [
+          -72.0,
+          -105.0,
+          252.0
+        ],
+        "lens_mm": 36.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 212,
+      "objetos_ocultos_count": 605,
+      "objetos_visiveis_amostra": [
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Inf",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Inf",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Inf",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_TetoPreto_SoffitDeck_Front",
+        "BAIA_TetoPreto_SoffitDeck_Front_Seg2",
+        "BAIA_TetoPreto_SoffitDeck_Rear",
+        "CABO_ETAPA2_AC_Unico_para_ModuloTomadas",
+        "CABO_ETAPA2_DC_12V_para_ONT",
+        "CABO_ETAPA2_DC_9V_para_MR30G",
+        "CABO_ETAPA2_DC_Fonte135W_para_JDCIN1",
+        "CABO_ETAPA2_Eth_MR30G_LAN1_para_JLAN1",
+        "CABO_ETAPA2_IEC_C5_Tomadas_para_Fonte135W"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "CERTIFICADO_iCLAMPER_Energia5_Branco_Corpo",
+        "PROVISORIO_Fonte_5V_2A_USB_Coolers",
+        "PROVISORIO_Fonte_Lenovo_135W_GX20Z46266_22x118x77",
+        "FAN1_80x80x15_5V_LateralEsq_Moldura",
+        "FAN2_80x80x15_5V_Fonte135W_Moldura",
+        "MOD3_Suporte_Energia_BayCheek_Dir"
+      ]
+    },
+    {
+      "vista_num": 14,
+      "vista_id": "V14",
+      "foto_arquivo": "renders/modulos/14_mod4_placa_mae_la_l161p.png",
+      "tecnica_arquivo": "renders/modulos/14_mod4_placa_mae_la_l161p_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          360.0,
+          -450.0,
+          505.0
+        ],
+        "target_mm": [
+          -35.0,
+          -105.0,
+          455.0
+        ],
+        "lens_mm": 38.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 300,
+      "objetos_ocultos_count": 517,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_Labirinto_Topo_Plat_F_Dir",
+        "BAIA_Labirinto_Topo_Plat_F_Esq",
+        "BAIA_Labirinto_Topo_Plat_M_Dir",
+        "BAIA_Labirinto_Topo_Plat_M_Esq"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "EXTRAIDO_VPS_MB_LA_L161P_PCB",
+        "EXTRAIDO_VPS_PROVISORIO_Heatpipe_GPU_BlowerDir",
+        "PROVISORIO_VPS_Bateria_Original_212x68x9_5",
+        "MOD4_LEGO_Cassete_VPS_Traseiro_142x164mm",
+        "PROVISORIO_Hub_USBC_Periferico_115x44x16",
+        "PROVISORIO_SSD_25_SATA_Case_100x70x9_5"
+      ]
+    },
+    {
+      "vista_num": 15,
+      "vista_id": "V15",
+      "foto_arquivo": "renders/modulos/15_vista_geral_4_modulos_relacoes.png",
+      "tecnica_arquivo": "renders/modulos/15_vista_geral_4_modulos_relacoes_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -1280.0,
+          -1240.0,
+          740.0
+        ],
+        "target_mm": [
+          -39.0,
+          -90.0,
+          420.0
+        ],
+        "lens_mm": 30.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1708.0
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 558,
+      "objetos_ocultos_count": 259,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MOD4_LEGO_Cassete_VPS_Frontal_114x164mm",
+        "CERTIFICADO_iCLAMPER_Energia5_Branco_Corpo",
+        "ONT_FD511G_CorpoBranco",
+        "MR30G_Lower_Chassis",
+        "AIR_Tela_Filtro_Basal"
+      ]
+    },
+    {
+      "vista_num": 16,
+      "vista_id": "V16",
+      "foto_arquivo": "renders/estrutura/16_sistema_gavetas_e_trilhos.png",
+      "tecnica_arquivo": "renders/estrutura/16_sistema_gavetas_e_trilhos_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -1040.0,
+          -1040.0,
+          620.0
+        ],
+        "target_mm": [
+          -39.0,
+          -90.0,
+          310.0
+        ],
+        "lens_mm": 32.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1067.5
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 641,
+      "objetos_ocultos_count": 176,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MOD1_Bandeja_MR30G_Base",
+        "MOD2_Gaveta_ONT_Bandeja",
+        "MOD3_SubGaveta_iClamper_TalaCentral",
+        "MOD3_Trilho_Fonte135W_Intermed_Esq",
+        "MOD4_LEGO_Cassete_VPS_Traseiro_142x164mm",
+        "PROVISORIO_Hub_USBC_Periferico_115x44x16"
+      ]
+    },
+    {
+      "vista_num": 17,
+      "vista_id": "V17",
+      "foto_arquivo": "renders/estrutura/17_detalhe_encaixes_e_guias.png",
+      "tecnica_arquivo": "renders/estrutura/17_detalhe_encaixes_e_guias_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -560.0,
+          -400.0,
+          500.0
+        ],
+        "target_mm": [
+          -110.0,
+          -55.0,
+          388.0
+        ],
+        "lens_mm": 32.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 211,
+      "objetos_ocultos_count": 606,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_Selo_Junta_Z286_Balanco",
+        "BAIA_Selo_Junta_Z286_Corner_Dir",
+        "BAIA_Selo_Junta_Z286_Rear_Dir",
+        "BAIA_Selo_Junta_Z286_Rear_Esq",
+        "BAIA_TetoPreto_Corner_Z286",
+        "BAIA_TetoPreto_PisoBalanco_178mm",
+        "BAIA_TetoPreto_SoffitDeck_Front",
+        "BAIA_TetoPreto_SoffitDeck_Front_Seg2",
+        "BAIA_TetoPreto_SoffitDeck_Rear",
+        "CABO_ETAPA2_Chicote_Bateria_JBAT201",
+        "CABO_ETAPA2_DC_Fonte135W_para_JDCIN1",
+        "CABO_ETAPA2_Eth_MR30G_LAN1_para_JLAN1",
+        "CABO_ETAPA2_HDMI_Manutencao_Pigtail"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MOD4_Patim_Cassete_Front",
+        "MOD4_Trilho_Fixo_Cassete_Front_Dir",
+        "MOD4_Ponte_Standoff_Suporte_PCB_Rear",
+        "MOD4_Trilho_SSD25_Intermed_Front",
+        "FIX_Tala_Inox_Junta_CasseteVPS"
+      ]
+    },
+    {
+      "vista_num": 18,
+      "vista_id": "V18",
+      "foto_arquivo": "renders/estrutura/18_sistema_portas_e_travas.png",
+      "tecnica_arquivo": "renders/estrutura/18_sistema_portas_e_travas_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -880.0,
+          -470.0,
+          470.0
+        ],
+        "target_mm": [
+          -155.0,
+          30.0,
+          275.0
+        ],
+        "lens_mm": 30.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_PortaClic_Rear_T3_Hub",
+        "PELE_F6_PortaClic_Rear_T1_Cabos",
+        "FIX_Pino_Dobradica_T3Hub_Inf",
+        "FIX_Fecho_Toque_TicTac_T3Hub_Inf",
+        "MOD4_Gaveta_Hub_USBC_Bandeja"
+      ]
+    },
+    {
+      "vista_num": 19,
+      "vista_id": "V19",
+      "foto_arquivo": "renders/estrutura/19_estrutura_sustentacao_colunas_vigas.png",
+      "tecnica_arquivo": "renders/estrutura/19_estrutura_sustentacao_colunas_vigas_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -890.0,
+          -960.0,
+          495.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          312.5
+        ],
+        "lens_mm": 36.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1031.6
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 484,
+      "objetos_ocultos_count": 333,
+      "objetos_visiveis_amostra": [
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Inf",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Inf",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_Gola_Plinto_Rear_Cabos",
+        "BAIA_Labirinto_Plinto_Dir_Front",
+        "BAIA_Labirinto_Plinto_Dir_Rear",
+        "BAIA_Labirinto_Plinto_Esq_Front",
+        "BAIA_Labirinto_Plinto_Esq_Mid",
+        "BAIA_Labirinto_Plinto_Esq_Mid_Seg2",
+        "BAIA_Labirinto_Plinto_Esq_RearGap",
+        "BAIA_Labirinto_Plinto_Front_Dir"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "ESQ_Viga_Arco_MOD4_Top_Esq",
+        "ESQ_Viga_Reforco_Balanco_Y137_Esq",
+        "ESQ_Piso_Balanco_Estrutural_Front_Esq",
+        "ESQ_Col_Front_Esq_T2",
+        "ESQ_Col_BayCheek_T1",
+        "ESQ_Sapata_Plinto_Front_Esq"
+      ]
+    },
+    {
+      "vista_num": 20,
+      "vista_id": "V20",
+      "foto_arquivo": "renders/estrutura/20_juncoes_estruturais_e_talas.png",
+      "tecnica_arquivo": "renders/estrutura/20_juncoes_estruturais_e_talas_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -620.0,
+          -520.0,
+          595.0
+        ],
+        "target_mm": [
+          -75.0,
+          -100.0,
+          355.0
+        ],
+        "lens_mm": 26.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 459,
+      "objetos_ocultos_count": 358,
+      "objetos_visiveis_amostra": [
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Inf",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Inf",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Inf",
+        "BAIA_FundoPreto_BayWall_Sup"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "FIX_Tala_Struct_Deck_Front_X38",
+        "FIX_Tala_Struct_Viga_Balanco_Y137",
+        "FIX_Tala_Struct_Viga_Arco_X40",
+        "MOD4_Suporte_Defletor_BlowerDir",
+        "FIX_Tala_Struct_Esq_N1_Y146"
+      ]
+    },
+    {
+      "vista_num": 21,
+      "vista_id": "V21",
+      "foto_arquivo": "renders/termica-conectividade/21_fluxo_ar_geral_gabinete.png",
+      "tecnica_arquivo": "renders/termica-conectividade/21_fluxo_ar_geral_gabinete_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          860.0,
+          -940.0,
+          620.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          315.0
+        ],
+        "lens_mm": 32.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1075.5
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 81,
+      "objetos_ocultos_count": 736,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MANUT_Cartucho_Filtro_Basal_182mm",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "BAIA_Plenum_Hex_PELE_F6_Front_5Frisos_T3_ColF",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Divisor_Topo_MOD3_MOD4_M"
+      ]
+    },
+    {
+      "vista_num": 22,
+      "vista_id": "V22",
+      "foto_arquivo": "renders/termica-conectividade/22_ventilacao_mod3.png",
+      "tecnica_arquivo": "renders/termica-conectividade/22_ventilacao_mod3_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -550.0,
+          -540.0,
+          355.0
+        ],
+        "target_mm": [
+          -65.0,
+          -155.0,
+          190.0
+        ],
+        "lens_mm": 28.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 531,
+      "objetos_ocultos_count": 286,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Inf",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Inf",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_GavetaColarFront_Preto",
+        "BAIA_GavetaFloorCover_Mid",
+        "BAIA_GavetaFloorCover_SideL",
+        "BAIA_GavetaFloorCover_SideR"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "AIR_Tela_Filtro_Basal",
+        "FAN1_80x80x15_5V_LateralEsq_Moldura",
+        "AIR_Duto_Admissao_FAN1",
+        "FAN2_80x80x15_5V_Fonte135W_Moldura",
+        "AIR_Coletor_ByPass_FAN2"
+      ]
+    },
+    {
+      "vista_num": 23,
+      "vista_id": "V23",
+      "foto_arquivo": "renders/termica-conectividade/23_ventilacao_mod4_e_dissipacao.png",
+      "tecnica_arquivo": "renders/termica-conectividade/23_ventilacao_mod4_e_dissipacao_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          360.0,
+          -455.0,
+          560.0
+        ],
+        "target_mm": [
+          -35.0,
+          -135.0,
+          480.0
+        ],
+        "lens_mm": 38.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 309,
+      "objetos_ocultos_count": 508,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_Labirinto_Topo_Plat_F_Dir",
+        "BAIA_Labirinto_Topo_Plat_F_Esq",
+        "BAIA_Labirinto_Topo_Plat_M_Dir"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MANUT_Filtro_Frontal_VPS_Moldura",
+        "EXTRAIDO_VPS_PROVISORIO_Heatpipe_GPU_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Defletor_AntiRecirc_Central"
+      ]
+    },
+    {
+      "vista_num": 24,
+      "vista_id": "V24",
+      "foto_arquivo": "renders/termica-conectividade/24_organizacao_cabos_alimentacao.png",
+      "tecnica_arquivo": "renders/termica-conectividade/24_organizacao_cabos_alimentacao_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -760.0,
+          -780.0,
+          445.0
+        ],
+        "target_mm": [
+          -40.0,
+          -75.0,
+          290.0
+        ],
+        "lens_mm": 34.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 854.6
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 116,
+      "objetos_ocultos_count": 701,
+      "objetos_visiveis_amostra": [
+        "BAIA_Gola_Plinto_Rear_Cabos",
+        "CABO_ETAPA2_AC_Unico_para_ModuloTomadas",
+        "CABO_ETAPA2_Chicote_Bateria_JBAT201",
+        "CABO_ETAPA2_DC_12V_para_ONT",
+        "CABO_ETAPA2_DC_9V_para_MR30G",
+        "CABO_ETAPA2_DC_Fonte135W_para_JDCIN1",
+        "CABO_ETAPA2_Eth_MR30G_LAN1_para_JLAN1",
+        "CABO_ETAPA2_Eth_ONT_LAN_para_MR30G_WAN",
+        "CABO_ETAPA2_Fibra_EntradaRear_para_ONT_PON",
+        "CABO_ETAPA2_HDMI_Manutencao_Pigtail",
+        "CABO_ETAPA2_IEC_C5_Tomadas_para_Fonte135W",
+        "CABO_ETAPA2_SATA_SSD25_MOD4",
+        "CABO_ETAPA2_USBC_Hub",
+        "CABO_ETAPA2_USB_5V_Ventoinhas",
+        "CERTIFICADO_iCLAMPER_Contato_Tomada_1",
+        "CERTIFICADO_iCLAMPER_Contato_Tomada_2",
+        "CERTIFICADO_iCLAMPER_Contato_Tomada_3",
+        "CERTIFICADO_iCLAMPER_Contato_Tomada_4",
+        "CERTIFICADO_iCLAMPER_Contato_Tomada_5",
+        "CERTIFICADO_iCLAMPER_Energia5_Botao_Disjuntor"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "CABO_ETAPA2_AC_Unico_para_ModuloTomadas",
+        "CABO_ETAPA2_IEC_C5_Tomadas_para_Fonte135W",
+        "CABO_ETAPA2_DC_Fonte135W_para_JDCIN1",
+        "CABO_ETAPA2_Fibra_EntradaRear_para_ONT_PON",
+        "CABO_ETAPA2_Eth_MR30G_LAN1_para_JLAN1",
+        "CABO_ETAPA2_USB_5V_Ventoinhas"
+      ]
+    },
+    {
+      "vista_num": 25,
+      "vista_id": "V25",
+      "foto_arquivo": "renders/termica-conectividade/25_antenas_roteador_afastamentos.png",
+      "tecnica_arquivo": "renders/termica-conectividade/25_antenas_roteador_afastamentos_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          380.0,
+          -330.0,
+          415.0
+        ],
+        "target_mm": [
+          42.0,
+          -15.0,
+          125.0
+        ],
+        "lens_mm": 42.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 378,
+      "objetos_ocultos_count": 439,
+      "objetos_visiveis_amostra": [
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Inf",
+        "BAIA_FundoPreto_BayWall_Inf",
+        "BAIA_GavetaColarFront_Preto",
+        "BAIA_GavetaFloorCover_Mid",
+        "BAIA_GavetaFloorCover_SideL",
+        "BAIA_GavetaFloorCover_SideR",
+        "BAIA_GavetaFloorCover_WingL",
+        "BAIA_GavetaFloorCover_WingR",
+        "BAIA_GavetaSelo_Pocket_Front",
+        "BAIA_GavetaSelo_Pocket_Rear",
+        "BAIA_Gola_Plinto_Rear_Cabos",
+        "BAIA_Labirinto_Plinto_Dir_Front"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MR30G_Antenna_Side_Left",
+        "MR30G_Antenna_Rear_Right",
+        "MOD2_Trilho_Transversal_Apoio_Front",
+        "MOD1_Corredica_Fixa_Front",
+        "MOD3_Trilho_Fixo_Energia_Rear_Transv"
+      ]
+    },
+    {
+      "vista_num": 26,
+      "vista_id": "V26",
+      "foto_arquivo": "renders/fabricacao/26_explosao_axonometrica_conjunto.png",
+      "tecnica_arquivo": "renders/fabricacao/26_explosao_axonometrica_conjunto_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          -1280.0,
+          -1380.0,
+          860.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          340.0
+        ],
+        "lens_mm": 30.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1518.9
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 4,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_Front_5Frisos_T2_ColF",
+        "PELE_F6_Rear_Painel_T2_ColM",
+        "PELE_F6_LajeTopo_21mm_F_Dir",
+        "ESQ_Col_Front_Esq_T2",
+        "MR30G_Lower_Chassis"
+      ]
+    },
+    {
+      "vista_num": 27,
+      "vista_id": "V27",
+      "foto_arquivo": "renders/fabricacao/27_separacao_pecas_por_modulo.png",
+      "tecnica_arquivo": "renders/fabricacao/27_separacao_pecas_por_modulo_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          2220.0,
+          180.0,
+          920.0
+        ],
+        "target_mm": [
+          -35.0,
+          180.0,
+          140.0
+        ],
+        "lens_mm": 26.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 2713.4
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 398,
+      "objetos_ocultos_count": 419,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "BAIA_BafflePreto_FundoInferior_Front",
+        "BAIA_BafflePreto_FundoInferior_Rear",
+        "BAIA_CheekFrente_Preto_Inf"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "AIR_Tela_Filtro_Basal",
+        "MR30G_Lower_Chassis",
+        "ONT_FD511G_CorpoBranco",
+        "CERTIFICADO_iCLAMPER_Energia5_Branco_Corpo",
+        "EXTRAIDO_VPS_MB_LA_L161P_PCB"
+      ]
+    },
+    {
+      "vista_num": 28,
+      "vista_id": "V28",
+      "foto_arquivo": "renders/fabricacao/28_pecas_individuais_e_encaixes.png",
+      "tecnica_arquivo": "renders/fabricacao/28_pecas_individuais_e_encaixes_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          820.0,
+          90.0,
+          390.0
+        ],
+        "target_mm": [
+          25.0,
+          90.0,
+          65.0
+        ],
+        "lens_mm": 27.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1070.6
+      },
+      "transformacao_apresentacao_aplicada": true,
+      "objetos_visiveis_count": 6,
+      "objetos_ocultos_count": 810,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "BAIA_Plenum_Hex_PELE_F6_Front_5Frisos_T2_ColF",
+        "ESQ_Viga_Reforco_Balanco_Y137_Esq",
+        "FIX_Tala_Struct_Viga_Balanco_Y137",
+        "MOD1_Corredica_Fixa_Front",
+        "PELE_F6_Front_5Frisos_T2_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_Front_5Frisos_T2_ColF",
+        "BAIA_Plenum_Hex_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "MOD1_Corredica_Fixa_Front",
+        "ESQ_Viga_Reforco_Balanco_Y137_Esq",
+        "FIX_Tala_Struct_Viga_Balanco_Y137"
+      ]
+    },
+    {
+      "vista_num": 29,
+      "vista_id": "V29",
+      "foto_arquivo": "renders/fabricacao/29_principais_interfaces_montagem.png",
+      "tecnica_arquivo": "renders/fabricacao/29_principais_interfaces_montagem_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          315.0,
+          -395.0,
+          540.0
+        ],
+        "target_mm": [
+          5.0,
+          -105.0,
+          445.0
+        ],
+        "lens_mm": 33.0
+      },
+      "camera_tech": {
+        "tipo": "PERSP",
+        "ortho_scale_mm": null
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 329,
+      "objetos_ocultos_count": 488,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "BAIA_CheekFrente_Preto_Sup",
+        "BAIA_FundoPreto_BayWall_Corner_Sup",
+        "BAIA_FundoPreto_BayWall_Sup",
+        "BAIA_Labirinto_Topo_Plat_F_Dir",
+        "BAIA_Labirinto_Topo_Plat_F_Esq"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "MOD4_Bossa_Standoff_H1",
+        "FIX_Inserto_Latao_M25_H1",
+        "MOD4_Ponte_Standoff_Suporte_PCB_Rear",
+        "FIX_Tala_Inox_Junta_CasseteVPS",
+        "AIR_Defletor_JatoSecundario_BlowerDir"
+      ]
+    },
+    {
+      "vista_num": 30,
+      "vista_id": "V30",
+      "foto_arquivo": "renders/fabricacao/30_vista_geral_dimensoes_referencia.png",
+      "tecnica_arquivo": "renders/fabricacao/30_vista_geral_dimensoes_referencia_tech.png",
+      "camera_foto": {
+        "eye_mm": [
+          840.0,
+          690.0,
+          740.0
+        ],
+        "target_mm": [
+          -39.0,
+          -100.0,
+          315.0
+        ],
+        "lens_mm": 38.0
+      },
+      "camera_tech": {
+        "tipo": "ORTHO",
+        "ortho_scale_mm": 1176.3
+      },
+      "transformacao_apresentacao_aplicada": false,
+      "objetos_visiveis_count": 813,
+      "objetos_ocultos_count": 3,
+      "objetos_visiveis_amostra": [
+        "AIR_Chamine_ByPass_MOD3_Inf",
+        "AIR_Chamine_ByPass_MOD3_Sup",
+        "AIR_Coletor_Adiabatico_Dir_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Dir_Traseiro_BlowerEsq",
+        "AIR_Coletor_Adiabatico_Esq_Frontal_BlowerDir",
+        "AIR_Coletor_Adiabatico_Esq_Traseiro_BlowerEsq",
+        "AIR_Coletor_ByPass_FAN2",
+        "AIR_Defletor_AntiRecirc_Central",
+        "AIR_Defletor_JatoSecundario_BlowerDir",
+        "AIR_Defletor_JatoSecundario_BlowerEsq_BaseSelada",
+        "AIR_Defletor_Termico_MOD3_MOD4_Dir",
+        "AIR_Defletor_Termico_MOD3_MOD4_Esq",
+        "AIR_Divisor_Topo_MOD3_MOD4_F",
+        "AIR_Divisor_Topo_MOD3_MOD4_M",
+        "AIR_Duto_Admissao_FAN1",
+        "AIR_Suporte_Defletor_MOD3_Dir",
+        "AIR_Tela_Filtro_Basal",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T1_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T2_ColF",
+        "AIR_Tela_Hex_Frisos_PELE_F6_Front_5Frisos_T3_ColF"
+      ],
+      "objetos_identificados_nos_pinos": [
+        "PELE_F6_LajeTopo_21mm_R_Dir",
+        "PELE_F6_Front_5Frisos_T4_ColF",
+        "PELE_F6_LatPosY_T3_ColD",
+        "MR30G_Antenna_Side_Right",
+        "PELE_F6_PortaClic_Rear_T3_Hub"
+      ]
+    }
+  ]
+}

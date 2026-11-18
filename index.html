@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOG10 · Monólito Modular VPS — Documentação Técnica REV7.1</title>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/build/three.module.js",
+      "three/addons/": "./vendor/three/examples/jsm/"
+    }
+  }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141619'/%3E%3Crect x='7' y='5' width='18' height='22' rx='2' fill='%23ECEAE4'/%3E%3Crect x='16' y='15' width='7' height='10' fill='%23141619'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-code">GOG10 · REV7.1</span>
+        <div class="brand-titles">
+          <h1>Monólito Modular VPS</h1>
+          <p>Documentação Visual, Arquitetura 3D &amp; Catálogo Dimensional (<code>FASE6_ETAPA3_REV7_1.blend</code>)</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação Principal">
+        <button class="nav-btn active" data-section="overview">Apresentação Geral</button>
+        <button class="nav-btn" data-section="vistas">30 Vistas Técnicas</button>
+        <button class="nav-btn" data-section="viewer3d">Explodido Interativo 3D</button>
+        <button class="nav-btn" data-section="dimensoes">Dimensões e Medidas</button>
+        <button class="nav-btn" data-section="rastreabilidade">Rastreabilidade &amp; Pendências</button>
+      </nav>
+    </div>
+
+    <div class="disclaimer-ribbon" role="status">
+      <span class="badge badge-warn">Estado de Engenharia: CAD Etapa 3 (Sem STL/3MF)</span>
+      <span>Este catálogo documenta fielmente o modelo atual <code>REV7.1</code> e <strong>não certifica aprovação física para impressão definitiva</strong>. Itens <code>PROVISORIO_*</code>, curvas térmicas P-Q e fluência aguardam paquímetro e ensaios em bancada.</span>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- SEÇÃO 1: APRESENTAÇÃO GERAL -->
+    <section id="sec-overview" class="page-section active">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Arquitetura Industrial em Camadas ("Cebola") · Etapa 3 CAD</p>
+          <h2>Gabinete vertical monolítico de <code>294,0 × 436,0 × 624,9 mm</code> integrando servidor, rede óptica e energia em cabo único</h2>
+          <p class="lead">
+            Projetado ao redor da placa-mãe reaproveitada <strong>Lenovo GOG10 LA-L161P</strong> em montagem vertical pelo lado curto, combinada ao roteador <strong>Mercusys MR30G</strong> (baía RF aberta com 4 antenas), terminação óptica <strong>ONT FD511G</strong>, distribuição elétrica <strong>iCLAMPER Energia 5</strong> e ventilação em dois circuitos separados.
+          </p>
+
+          <div class="hero-specs">
+            <div class="spec-item">
+              <span class="spec-label">Envoltória Global</span>
+              <strong class="spec-val">294,0 × 436,0 × 624,9 mm</strong>
+              <span class="spec-note">80,10 L brutos · 57,4140 L livres internos</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Inventário do Modelo</span>
+              <strong class="spec-val" id="hero-bom-count">813 itens BOM</strong>
+              <span class="spec-note" id="hero-fdm-count">505 FDM (1,2–201,5 mm) · 205 ferragens · 90 com. · 13 cabos</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Mecanismos &amp; Integridade</span>
+              <strong class="spec-val">7 gavetas · 26 colunas</strong>
+              <span class="spec-note">BFS 795/800 firmes · 0 colisões fora da lista · 0 vazamentos</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Afastamentos &amp; Massas</span>
+              <strong class="spec-val">34,52 / 30,44 mm RF</strong>
+              <span class="spec-note">9,397 kg leve · 10,845 kg nominal · 13,634 kg cons.</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-jump-section="vistas">Explorar 30 Vistas</button>
+            <button class="btn btn-secondary" data-jump-section="viewer3d">Abrir Explodido 3D Interativo</button>
+            <button class="btn btn-secondary" data-jump-section="dimensoes">Consultar Tabela Dimensional</button>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img id="hero-img" src="./renders/externo/05_vista_superior_isometrica_externa.png" alt="Perspectiva isométrica externa do gabinete GOG10 REV7.1" />
+          <figcaption>
+            <strong>V05 — Silhueta Externa REV7.1</strong> · Carenagem destacável <code>#ECEAE4</code> com 5 frisos verticais <code>ColF</code> e baía aberta RF para as 4 antenas originais.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="block-divider">
+        <h3>Grupos Documentados (30 Vistas · Modo Fotorrealista + Modo Técnico)</h3>
+        <p>Selecione qualquer frente temático para navegar diretamente às 5 pranchas correspondentes com pinos interativos:</p>
+      </div>
+      <div class="groups-overview-grid" id="groups-overview-grid"></div>
+
+      <div class="block-divider">
+        <h3>Subsistemas e Módulos Reais Identificados</h3>
+        <p>Referência visual unificada entre vistas técnicas, cenas 3D e tabela dimensional:</p>
+      </div>
+      <div class="modules-grid" id="overview-modules-grid"></div>
+    </section>
+
+    <!-- SEÇÃO 2: 30 VISTAS TÉCNICAS E RENDERS -->
+    <section id="sec-vistas" class="page-section">
+      <div class="vistas-toolbar">
+        <div class="filter-pills" id="vista-group-filters">
+          <button class="pill active" data-group="ALL">Todas (30)</button>
+          <button class="pill" data-group="A">A · Externas (5)</button>
+          <button class="pill" data-group="B">B · Arquitetura Interna (5)</button>
+          <button class="pill" data-group="C">C · Módulos e Equipamentos (5)</button>
+          <button class="pill" data-group="D">D · Estrutura e Mecanismos (5)</button>
+          <button class="pill" data-group="E">E · Refrigeração e Cabos (5)</button>
+          <button class="pill" data-group="F">F · Construção e Fabricação (5)</button>
+        </div>
+        <div class="vista-mode-controls">
+          <span class="control-label">Modalidade Global:</span>
+          <div class="segmented" role="group" aria-label="Modalidade da Vista">
+            <button class="seg-btn active" data-render-mode="foto">Modo 1 · Fotorrealista</button>
+            <button class="seg-btn" data-render-mode="tech">Modo 2 · Vista Técnica CAD</button>
+          </div>
+          <label class="toggle-check">
+            <input type="checkbox" id="toggle-global-pins" checked />
+            <span>Legendas / Pinos</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- PALCO DE INSPEÇÃO DETALHADA DA VISTA ATIVA -->
+      <div class="inspector-stage" id="vista-stage">
+        <div class="stage-canvas-panel">
+          <div class="stage-topbar">
+            <div class="stage-title-wrap">
+              <span class="vista-code-tag" id="stage-code">V01</span>
+              <span class="vista-group-tag" id="stage-group">Grupo A — Apresentação Externa</span>
+            </div>
+            <div class="stage-tools">
+              <button class="tool-btn" id="btn-prev-view" title="Vista Anterior (Seta Esquerda)">← Anterior</button>
+              <span class="stage-counter" id="stage-counter">1 / 30</span>
+              <button class="tool-btn" id="btn-next-view" title="Próxima Vista (Seta Direita)">Próxima →</button>
+              <span class="sep"></span>
+              <button class="tool-btn" id="btn-zoom-out" title="Reduzir Zoom">−</button>
+              <span class="zoom-readout" id="zoom-readout">100%</span>
+              <button class="tool-btn" id="btn-zoom-in" title="Ampliar Zoom">+</button>
+              <button class="tool-btn" id="btn-zoom-reset" title="Ajustar ao Quadro">Ajustar</button>
+              <button class="tool-btn" id="btn-fullscreen" title="Abrir em Tela Cheia">Tela Cheia</button>
+            </div>
+          </div>
+
+          <div class="viewport-frame" id="stage-viewport">
+            <div class="viewport-transform" id="stage-transform">
+              <img id="stage-img" src="" alt="" draggable="false" />
+              <svg id="stage-svg-overlay" class="svg-overlay" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+            </div>
+            <div class="schematic-banner hidden" id="stage-schematic-banner"></div>
+            <div class="stage-hint">Arraste para mover quando ampliado · Roda do mouse altera zoom · Clique nos pinos [1..N] para inspecionar</div>
+          </div>
+
+          <div class="stage-cota-strip hidden" id="stage-cota-strip"></div>
+        </div>
+
+        <aside class="stage-info-panel">
+          <div class="info-scroll">
+            <h2 id="stage-title">—</h2>
+            <p class="stage-subtitle" id="stage-subtitle">—</p>
+
+            <div class="meta-box">
+              <div><strong>Objetivo:</strong> <span id="stage-objetivo">—</span></div>
+              <div><strong>Descrição Técnica:</strong> <span id="stage-descricao">—</span></div>
+              <div class="obs-line"><strong>Observação:</strong> <span id="stage-observacoes">—</span></div>
+              <div class="tech-meta-line" id="stage-tech-meta"></div>
+            </div>
+
+            <div class="callouts-header">
+              <h4>Componentes Identificados</h4>
+              <span class="callout-hint">Projeção fiel ao <code>.blend</code></span>
+            </div>
+            <ul class="callouts-list" id="stage-callouts-list"></ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- GRADE DE MINIATURAS DAS 30 VISTAS -->
+      <div class="thumbs-header">
+        <h3>Índice Visual das Vistas Filtradas</h3>
+        <span id="thumbs-count">30 vistas exibidas</span>
+      </div>
+      <div class="thumbs-grid" id="vistas-thumbs-grid"></div>
+    </section>
+
+    <!-- SEÇÃO 3: EXPLODIDO INTERATIVO 3D (MODO 3) -->
+    <section id="sec-viewer3d" class="page-section">
+      <div class="viewer3d-layout">
+        <div class="viewer3d-canvas-wrap">
+          <div class="viewer3d-topbar">
+            <div class="camera-presets">
+              <button class="tool-btn" data-cam3d="iso">Isométrica</button>
+              <button class="tool-btn" data-cam3d="front">Frente (+X)</button>
+              <button class="tool-btn" data-cam3d="rear">Traseira (-X)</button>
+              <button class="tool-btn" data-cam3d="left">Lat. Esq (-Y)</button>
+              <button class="tool-btn" data-cam3d="right">Lat. Dir (+Y)</button>
+              <button class="tool-btn" data-cam3d="top">Topo (+Z)</button>
+            </div>
+            <div class="viewer3d-flags">
+              <button class="tool-btn" id="btn3d-wire-edges" title="Alternar Arestas Técnicas">Arestas CAD</button>
+              <button class="tool-btn" id="btn3d-reset" title="Resetar Explosão, Gavetas e Câmera">Resetar Cena</button>
+            </div>
+          </div>
+
+          <div id="three-canvas-host" class="three-host">
+            <div class="three-loading" id="three-loading">
+              <div class="spinner"></div>
+              <p>Carregando geometria real REV7.1 (<code>GOG10_REV7_1.glb</code> · 816 objetos)…</p>
+            </div>
+          </div>
+
+          <div class="viewer3d-bottombar">
+            <span>Clique esquerdo em qualquer peça para selecionar · Botão esquerdo gira · Botão direito desloca · Scroll aproxima/afasta</span>
+          </div>
+        </div>
+
+        <aside class="viewer3d-sidebar">
+          <div class="panel-card">
+            <h3>Controles de Apresentação 3D</h3>
+            <p class="small-note">As translações abaixo atuam exclusivamente sobre a cópia WebGL de visualização; as coordenadas de produção em <code>FASE6_ETAPA3_REV7_1.blend</code> permanecem inalteradas.</p>
+
+            <div class="slider-group">
+              <label for="slider-explode">
+                <span>Separação / Explosão de Módulos</span>
+                <strong id="val-explode">0%</strong>
+              </label>
+              <input type="range" id="slider-explode" min="0" max="100" value="0" />
+            </div>
+
+            <div class="slider-group">
+              <label for="slider-drawers">
+                <span>Abertura Cinemática (7 Gavetas + Portas)</span>
+                <strong id="val-drawers">0%</strong>
+              </label>
+              <input type="range" id="slider-drawers" min="0" max="100" value="0" />
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="layer-header">
+              <h3>Camadas &amp; Módulos</h3>
+              <div class="layer-quick">
+                <button class="link-btn" id="btn3d-show-all">Mostrar tudo</button>
+                <button class="link-btn" id="btn3d-hide-skin">Ocultar carenagem</button>
+              </div>
+            </div>
+            <div class="layer-toggles" id="layer-toggles-list"></div>
+          </div>
+
+          <div class="panel-card selection-card" id="selection3d-card">
+            <h3>Peça Selecionada no 3D</h3>
+            <div id="selection3d-body" class="selection-empty">
+              Clique em qualquer componente no modelo 3D para consultar função, módulo, dimensões exatas e material.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: DIMENSIONAL E TABELA GERAL (MODO 4) -->
+    <section id="sec-dimensoes" class="page-section">
+      <div class="dim-intro-banner">
+        <div>
+          <h2>Modalidade Dimensional Obrigatória — Geometria Real REV7.1</h2>
+          <p>
+            Medidas extraídas diretamente de <code>FASE6_ETAPA3_REV7_1.blend</code> considerando matriz de transformação real (<code>matrix_world</code>). Separação estrita entre:
+            <strong>(1) dimensão da peça montada</strong>, <strong>(2) dimensão na orientação de impressão recomendada</strong> e <strong>(3) dimensão de conjunto montado</strong>.
+          </p>
+        </div>
+        <button class="btn btn-primary" id="btn-export-csv">Exportar Tabela (CSV)</button>
+      </div>
+
+      <!-- RESUMOS DE CONJUNTO MONTADO (NÃO CONFUNDIR COM PEÇAS INDIVIDUAIS) -->
+      <div class="assembly-grid">
+        <div class="assembly-card">
+          <h4>1. Envoltória Global &amp; Volumes (Conjunto Montado)</h4>
+          <table class="mini-table">
+            <tbody>
+              <tr><td>Profundidade Total (X: -186,0 a +108,0)</td><td><strong>294,0 mm</strong></td></tr>
+              <tr><td>Largura Total (Y: -318,0 a +118,0)</td><td><strong>436,0 mm</strong></td></tr>
+              <tr><td>Altura Total (Z: 0,0 a +624,9)</td><td><strong>624,9 mm</strong></td></tr>
+              <tr><td>Volume Bruto / Volume Livre Interno Exato</td><td><strong>80,10 L / 57,4140 L</strong></td></tr>
+              <tr><td>Regimes de Massa (Leve / Nominal / Cons.)</td><td><strong>9,397 / 10,845 / 13,634 kg</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="assembly-card">
+          <h4>2. Dimensões por Módulo / Bloco Montado</h4>
+          <table class="mini-table" id="dim-modules-table">
+            <thead>
+              <tr><th>Módulo</th><th>Peças</th><th>X×Y×Z Conjunto (mm)</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="assembly-card">
+          <h4>3. Equipamentos Principais (Conjunto de Submalhas)</h4>
+          <table class="mini-table" id="dim-equip-table">
+            <thead>
+              <tr><th>Equipamento</th><th>Envelope (mm)</th><th>Status</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="assembly-card">
+          <h4>4. Maiores Peças Imprimíveis FDM (Mesa 220×220 mm)</h4>
+          <table class="mini-table" id="dim-largest-table">
+            <thead>
+              <tr><th>ID</th><th>Peça FDM</th><th>Maior Eixo</th><th>Vol (cm³)</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="assembly-card full-width-card">
+        <h4>5. As 7 Gavetas e Bandejas — Parâmetros Geométricos, Curso, Deflexão e Engaste (H3 Analítico)</h4>
+        <div class="table-scroll">
+          <table class="data-table" id="dim-drawers-table">
+            <thead>
+              <tr>
+                <th>Gaveta</th>
+                <th>Curso</th>
+                <th class="num">W_dead / W_crit (N)</th>
+                <th class="num">FoS Dead / Crít.</th>
+                <th class="num">Elástica + Queda 2 est. (mm)</th>
+                <th class="num">Limite (mm)</th>
+                <th class="num">Engaste S2_S1 / S3_S2 (mm)</th>
+                <th class="num">F_extr (N)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="small-note" style="margin-top:8px">
+          Nota H3: Fluência avaliada com premissa analítica <code>E_creep_1000h = 630 MPa</code> (~45% de 1400 MPa, ISO 899-1) + carga acidental de mão <code>10,0 N</code> + queda gravitacional por folga de canal <code>0,25 mm</code>. TDS do lote real e ensaio de fluência pendentes.
+        </p>
+      </div>
+
+      <!-- TABELA GERAL PESQUISÁVEL DE TODAS AS PEÇAS -->
+      <div class="table-section-card">
+        <div class="table-controls">
+          <div class="table-title">
+            <h3>Tabela Geral de Dimensões das Peças Individuais</h3>
+            <span id="table-count-label">Exibindo 816 de 816 registros</span>
+          </div>
+          <div class="table-filters">
+            <input type="search" id="dim-search" placeholder="Pesquisar por ID (ex: GOG-012), nome no Blender ou material…" />
+            <select id="dim-filter-module">
+              <option value="ALL">Todos os Módulos</option>
+            </select>
+            <select id="dim-filter-category">
+              <option value="ALL">Todas as Categorias</option>
+              <option value="FDM_Imprimivel">FDM Imprimível (505)</option>
+              <option value="Componente_Comercial_ou_HW">Comercial / Hardware (90)</option>
+              <option value="Elemento_Montagem_Ferragem">Ferragem / Montagem (205)</option>
+              <option value="Curva_Roteamento_Cabo">Cabos / Curvas 3D (13)</option>
+              <option value="Auxiliar_Referencia_Clearance">Keepouts Referência (3)</option>
+            </select>
+            <select id="dim-sort">
+              <option value="id-asc">Ordenar: ID (GOG-001…)</option>
+              <option value="max-desc">Maior Dimensão (mm) ↓</option>
+              <option value="x-desc">Comprimento X (mm) ↓</option>
+              <option value="y-desc">Largura Y (mm) ↓</option>
+              <option value="z-desc">Altura Z (mm) ↓</option>
+              <option value="vol-desc">Volume (cm³) ↓</option>
+              <option value="name-asc">Nome A→Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-scroll">
+          <table class="data-table" id="dim-main-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Peça</th>
+                <th>Módulo</th>
+                <th class="num">X (mm)</th>
+                <th class="num">Y (mm)</th>
+                <th class="num">Z (mm)</th>
+                <th>Orientação FDM (mm)</th>
+                <th class="num">Vol (cm³)</th>
+                <th>Material</th>
+                <th class="num">Qtd</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="dim-main-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar" id="dim-pagination"></div>
+      </div>
+
+      <!-- GAVETA LATERAL DE DETALHES DA PEÇA -->
+      <div class="part-drawer hidden" id="part-detail-drawer" role="dialog" aria-label="Detalhes Técnicos da Peça">
+        <div class="part-drawer-inner">
+          <div class="part-drawer-head">
+            <div>
+              <span class="vista-code-tag" id="pd-id">GOG-001</span>
+              <h3 id="pd-name">—</h3>
+            </div>
+            <button class="tool-btn" id="pd-close">Fechar ✕</button>
+          </div>
+          <div id="pd-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: RASTREABILIDADE & PENDÊNCIAS -->
+    <section id="sec-rastreabilidade" class="page-section">
+      <div class="trace-grid">
+        <div class="panel-card">
+          <h3>Pendências Obrigatórias de Validação Física (Pré-Etapa 4)</h3>
+          <p class="small-note">Características ainda não aferidas fisicamente ou avaliadas apenas por modelo analítico permanecem destacadas em todo o site:</p>
+          <ul class="pending-list" id="trace-pending-list"></ul>
+        </div>
+
+        <div class="panel-card">
+          <h3>Resumo de Auditoria CAD / BVH / Analítica (REV7.1 Pós-Rodada H)</h3>
+          <div id="trace-audit-summary"></div>
+        </div>
+      </div>
+
+      <div class="panel-card full-width-card">
+        <h3>Relatório de Correspondência: 30 Vistas ↔ Objetos Reais do Blender</h3>
+        <p class="small-note">Derivado diretamente de <code>data/rev7_1_render_manifest.json</code> durante a geração automatizada das imagens sobre <code>FASE6_ETAPA3_REV7_1.blend</code>.</p>
+        <div class="table-scroll">
+          <table class="data-table" id="manifest-table">
+            <thead>
+              <tr>
+                <th>Vista</th>
+                <th>Arquivo Fotorrealista &amp; Técnico</th>
+                <th>Câmera / Projeção</th>
+                <th class="num">Visíveis</th>
+                <th class="num">Ocultos</th>
+                <th>Transf. Apres.</th>
+                <th>Componentes Chamados nos Pinos</th>
+              </tr>
+            </thead>
+            <tbody id="manifest-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL TELA CHEIA PARA AS 30 VISTAS -->
+  <div class="lightbox hidden" id="vista-lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-bar">
+      <div class="lb-left">
+        <span class="vista-code-tag" id="lb-code">V01</span>
+        <strong id="lb-title">—</strong>
+      </div>
+      <div class="lb-actions">
+        <div class="segmented">
+          <button class="seg-btn active" data-lb-mode="foto">Fotorrealista</button>
+          <button class="seg-btn" data-lb-mode="tech">Vista Técnica</button>
+        </div>
+        <button class="tool-btn" id="lb-toggle-pins">Ocultar Pinos</button>
+        <button class="tool-btn" id="lb-prev">←</button>
+        <button class="tool-btn" id="lb-next">→</button>
+        <button class="tool-btn" id="lb-close">Fechar (Esc)</button>
+      </div>
+    </div>
+    <div class="lightbox-stage">
+      <div class="lightbox-img-wrap" id="lb-wrap">
+        <img id="lb-img" src="" alt="" />
+        <svg id="lb-svg" class="svg-overlay" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      </div>
+      <p class="lightbox-caption" id="lb-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span>GOG10 · FASE6_ETAPA3_REV7_1 · Documentação fiel sem alteração da geometria original nem geração de STL/3MF.</span>
+    <span>Fonte única: <code>FASE6_ETAPA3_REV7_1.blend</code> · Renders Cycles &amp; Workbench + WebGL Three.js local.</span>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
