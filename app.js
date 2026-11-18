@@ -1,14 +1,16 @@
 import { renderSvgOverlay } from "./calloutOverlay.js";
 import { Gog3DViewer } from "./viewer3d.js";
+import { CaminhoCViewer } from "./caminhoCViewer.js";
 
 const state = {
   viewsData: null,
   dimData: null,
   modData: null,
   manifestData: null,
+  camcData: null,
   dimByName: {},
   dimById: {},
-  activeSection: "overview",
+  activeSection: "caminhoc",
   groupFilter: "ALL",
   renderMode: "foto", // "foto" | "tech"
   showPins: true,
@@ -24,6 +26,7 @@ const state = {
   dimPage: 1,
   dimPerPage: 40,
   viewer3d: null,
+  camcViewer: null,
 };
 
 const GROUP_HERO_MAP = [
@@ -36,18 +39,20 @@ const GROUP_HERO_MAP = [
 ];
 
 async function loadAllData() {
-  const [vRes, dRes, mRes, manRes, propRes] = await Promise.all([
+  const [vRes, dRes, mRes, manRes, propRes, camcRes] = await Promise.all([
     fetch("./data/rev7_1_site_views.json").then((r) => r.json()),
     fetch("./data/rev7_1_site_dimensions.json").then((r) => r.json()),
     fetch("./data/rev7_1_site_modules.json").then((r) => r.json()),
     fetch("./data/rev7_1_render_manifest.json").then((r) => r.json()),
     fetch("./data/rev7_1_stl_propositos.json").then((r) => r.json()).catch(() => null),
+    fetch("./data/caminho_c_v2_summary.json").then((r) => r.json()).catch(() => null),
   ]);
   state.viewsData = vRes;
   state.dimData = dRes;
   state.modData = mRes;
   state.manifestData = manRes;
   state.propData = propRes;
+  state.camcData = camcRes;
   for (const r of dRes.itens) {
     state.dimByName[r.nome] = r;
     state.dimById[r.id] = r;
@@ -72,6 +77,10 @@ function switchSection(sec) {
   if (sec === "viewer3d") {
     initViewerIfNeeded();
     setTimeout(() => state.viewer3d?.resize(), 60);
+  }
+  if (sec === "caminhoc") {
+    initCaminhoCViewerIfNeeded();
+    setTimeout(() => state.camcViewer?.resize(), 60);
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -769,11 +778,198 @@ function initTraceabilitySection() {
   `).join("");
 }
 
+function initCaminhoCViewerIfNeeded() {
+  if (state.camcViewer) return;
+  const host = document.getElementById("camc-three-host");
+  if (!host) return;
+  const layerLabels = {
+    laser_ext: "Chapa Externa Cortada a Laser (3,0 mm)",
+    laser_int: "Chapa Interna / Prateleira / Cassete (3,0 mm)",
+    alu_comercial: "Alumínio 2 mm / Corrediça Mini / Espaçador Latão",
+    petg_3d: "Peça Funcional Impressa em 3D (PETG Comum)",
+    hardware: "Hardware Real (Equipamento Existente)",
+  };
+  state.camcViewer = new CaminhoCViewer(host, (name, layer) => {
+    const body = document.getElementById("camc-selection-body");
+    if (!body) return;
+    const pRec = state.camcData?.pecas_3d?.find((p) => name.includes(p.id) || name.includes(p.nome));
+    body.className = "selection-kv";
+    body.innerHTML = `
+      <div><span class="vista-code-tag">${pRec ? pRec.id : layer.toUpperCase()}</span> <code>${name}</code></div>
+      <div><strong>Camada:</strong> ${layerLabels[layer] || layer}</div>
+      ${pRec ? `<div><strong>Dimensões 3D:</strong> ${pRec.dims.join(" × ")} mm · <strong>Peso:</strong> ~${pRec.peso_g} g (~${pRec.horas_h} h)</div><div><strong>Função:</strong> ${pRec.funcao}</div>` : ""}
+    `;
+  });
+  state.camcViewer.init();
+
+  const sliderExp = document.getElementById("camc-slider-explode");
+  sliderExp?.addEventListener("input", (e) => {
+    document.getElementById("camc-val-explode").textContent = `${e.target.value}%`;
+    state.camcViewer.setExplode(Number(e.target.value));
+  });
+  document.querySelectorAll("[data-camc-preset]").forEach((b) => {
+    b.addEventListener("click", () => state.camcViewer.setPreset(b.dataset.camcPreset));
+  });
+  document.querySelectorAll("[data-camc-layer]").forEach((cb) => {
+    cb.addEventListener("change", (e) => state.camcViewer.setLayerVisible(e.target.dataset.camcLayer, e.target.checked));
+  });
+  let xrayOn = false;
+  document.getElementById("btn-camc-xray")?.addEventListener("click", (e) => {
+    xrayOn = !xrayOn;
+    e.target.classList.toggle("active", xrayOn);
+    state.camcViewer.setXrayExternal(xrayOn);
+  });
+  document.getElementById("btn-camc-reset")?.addEventListener("click", () => {
+    if (sliderExp) sliderExp.value = 0;
+    document.getElementById("camc-val-explode").textContent = "0%";
+    xrayOn = false;
+    document.getElementById("btn-camc-xray")?.classList.remove("active");
+    state.camcViewer.setXrayExternal(false);
+    state.camcViewer.setExplode(0);
+    document.querySelectorAll("[data-camc-layer]").forEach((cb) => {
+      cb.checked = true;
+      state.camcViewer.setLayerVisible(cb.dataset.camcLayer, true);
+    });
+    state.camcViewer.setPreset("iso");
+  });
+}
+
+function renderCaminhoCDxfSheet(sh) {
+  const svg = document.getElementById("camc-dxf-svg");
+  const meta = document.getElementById("camc-dxf-meta");
+  if (!svg || !meta || !sh) return;
+  const pad = 26;
+  const vw = sh.w + pad * 2;
+  const vh = sh.h + pad * 2;
+  svg.setAttribute("viewBox", `${-pad} ${-pad} ${vw} ${vh}`);
+  const flipY = (y) => sh.h - y;
+
+  const rectsSvg = (sh.rects || []).map(([x0, y0, x1, y1, lbl]) => {
+    const rw = Math.max(0.5, x1 - x0);
+    const rh = Math.max(0.5, y1 - y0);
+    const sy = flipY(y1);
+    return `
+      <rect x="${x0}" y="${sy}" width="${rw}" height="${rh}" fill="rgba(245,158,11,0.16)" stroke="#f59e0b" stroke-width="1.6" />
+      <text x="${x0 + rw / 2}" y="${sy + rh / 2}" fill="#fde68a" font-size="${Math.max(6, Math.min(11, Math.min(rw, rh) * 0.25))}" text-anchor="middle" dominant-baseline="middle" font-family="monospace">${lbl}</text>
+    `;
+  }).join("");
+
+  const circsSvg = (sh.circles || []).map(([cx, cy, r]) => {
+    const isFan = r >= 20;
+    return `<circle cx="${cx}" cy="${flipY(cy)}" r="${Math.max(r, 2.2)}" fill="${isFan ? "rgba(16,185,129,0.18)" : "#34d399"}" stroke="#10b981" stroke-width="${isFan ? 2.2 : 1.0}" />`;
+  }).join("");
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${sh.w}" height="${sh.h}" fill="rgba(56,189,248,0.08)" stroke="#38bdf8" stroke-width="2.4" />
+    ${rectsSvg}
+    ${circsSvg}
+    <text x="${sh.w / 2}" y="-9" fill="#bae6fd" font-size="13" text-anchor="middle" font-family="monospace">${sh.w} mm</text>
+    <text x="-10" y="${sh.h / 2}" fill="#bae6fd" font-size="13" text-anchor="middle" font-family="monospace" transform="rotate(-90 -10 ${sh.h / 2})">${sh.h} mm</text>
+  `;
+
+  meta.innerHTML = `
+    <span class="vista-code-tag">${sh.id}</span>
+    <h4 style="margin:8px 0 6px;">${sh.nome}</h4>
+    <p class="small-note" style="margin-bottom:10px;">${sh.funcao}</p>
+    <table class="mini-table" style="width:100%;">
+      <tbody>
+        <tr><td>Arquivo <code>.DXF</code></td><td><code>${sh.fname}</code></td></tr>
+        <tr><td>Dimensão 1:1</td><td><strong>${sh.w} × ${sh.h} × ${sh.espessura_mm} mm</strong></td></tr>
+        <tr><td>Material</td><td><strong>${sh.material}</strong></td></tr>
+        <tr><td>Recortes / Furos</td><td><strong>${(sh.rects || []).length} recortes</strong> · <strong>${(sh.circles || []).length} furos circulares</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-size:0.82rem;color:#475569;">
+      <span style="color:#0284c7;font-weight:700;">■ Azul:</span> Contorno externo 1:1 &nbsp;·&nbsp;
+      <span style="color:#d97706;font-weight:700;">■ Âmbar:</span> Janelas / fendas / rasgos &nbsp;·&nbsp;
+      <span style="color:#059669;font-weight:700;">● Verde:</span> Furos circulares (Ø76 mm / H1..H21 / M3)
+    </div>
+  `;
+}
+
+function initCaminhoC() {
+  const data = state.camcData;
+  if (!data) return;
+
+  const stat3d = document.getElementById("camc-stat-3d");
+  const statSub = document.getElementById("camc-stat-3d-sub");
+  if (stat3d) stat3d.textContent = `${data.pecas_3d_count} peças · ${Math.round(data.peso_3d_g)} g`;
+  if (statSub) statSub.textContent = `${data.bandejas_3d_count} bandejas 202×202 · ~${data.horas_3d_h} h · ${data.pecas_3d_count}/${data.pecas_3d_count} STLs manifold`;
+
+  const rGrid = document.getElementById("camc-renders-grid");
+  if (rGrid && data.renders) {
+    rGrid.innerHTML = data.renders.map((r, idx) => `
+      <figure class="panel-card" style="padding:12px;margin:0;cursor:zoom-in;" data-camc-zoom="${idx}">
+        <img src="${r.src}" alt="${r.titulo}" style="width:100%;border-radius:8px;display:block;aspect-ratio:4/3;object-fit:cover;background:#f3f4f6;" />
+        <figcaption style="margin-top:10px;">
+          <span class="vista-code-tag">${r.id}</span>
+          <strong style="display:block;margin:6px 0 4px;">${r.titulo}</strong>
+          <span class="small-note">${r.legenda}</span>
+        </figcaption>
+      </figure>
+    `).join("");
+
+    document.querySelectorAll("[data-camc-zoom]").forEach((el) => {
+      el.addEventListener("click", () => {
+        const idx = Number(el.dataset.camcZoom);
+        const r = data.renders[idx];
+        if (!r) return;
+        const lb = document.getElementById("vista-lightbox");
+        document.getElementById("lb-code").textContent = r.id;
+        document.getElementById("lb-title").textContent = r.titulo;
+        document.getElementById("lb-img").src = r.src;
+        document.getElementById("lb-svg").innerHTML = "";
+        document.getElementById("lb-caption").textContent = r.legenda;
+        lb.classList.remove("hidden");
+      });
+    });
+  }
+
+  const tbody = document.getElementById("camc-parts-tbody");
+  if (tbody && data.pecas_3d) {
+    tbody.innerHTML = data.pecas_3d.map((p) => `
+      <tr>
+        <td><code>${p.id}</code></td>
+        <td><strong>${p.nome}</strong></td>
+        <td class="num">${p.dims[0]} × ${p.dims[1]} × ${p.dims[2]}</td>
+        <td class="num"><strong>~${p.peso_g} g</strong></td>
+        <td class="num">~${p.horas_h} h</td>
+        <td><small>${p.funcao}</small></td>
+      </tr>
+    `).join("");
+  }
+
+  const dxfTabs = document.getElementById("camc-dxf-tabs");
+  if (dxfTabs && data.chapas_laser?.length) {
+    dxfTabs.innerHTML = data.chapas_laser.map((sh, i) => `
+      <button class="pill ${i === 0 ? "active" : ""}" data-dxf-idx="${i}">${sh.id}</button>
+    `).join("");
+    dxfTabs.querySelectorAll("[data-dxf-idx]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        dxfTabs.querySelectorAll(".pill").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderCaminhoCDxfSheet(data.chapas_laser[Number(btn.dataset.dxfIdx)]);
+      });
+    });
+    renderCaminhoCDxfSheet(data.chapas_laser[0]);
+  }
+
+  document.getElementById("btn-scroll-camc-3d")?.addEventListener("click", () => {
+    document.getElementById("anchor-camc-3d")?.scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("btn-scroll-camc-dxf")?.addEventListener("click", () => {
+    document.getElementById("anchor-camc-dxf")?.scrollIntoView({ behavior: "smooth" });
+  });
+
+  initCaminhoCViewerIfNeeded();
+}
+
 async function bootstrap() {
   document.querySelectorAll(".nav-btn").forEach((b) => b.addEventListener("click", () => switchSection(b.dataset.section)));
   document.querySelectorAll("[data-jump-section]").forEach((b) => b.addEventListener("click", () => switchSection(b.dataset.jumpSection)));
 
   await loadAllData();
+  initCaminhoC();
   initOverview();
   setupStageInteractions();
   renderVistasSection();
