@@ -36,8 +36,8 @@
     </div>
 
     <div class="disclaimer-ribbon" role="status">
-      <span class="badge badge-warn">Estado de Engenharia: CAD Etapa 3 (Sem STL/3MF)</span>
-      <span>Este catálogo documenta fielmente o modelo atual <code>REV7.1</code> e <strong>não certifica aprovação física para impressão definitiva</strong>. Itens <code>PROVISORIO_*</code>, curvas térmicas P-Q e fluência aguardam paquímetro e ensaios em bancada.</span>
+      <span class="badge badge-ok">Pacote STL Gráfica 3D Disponível (505 Peças · 0 Erros Manifold)</span>
+      <span>Todas as <code>505</code> peças FDM (<code>12.054,3 cm³</code> · <code>~6,32 kg</code> estimados · <code>90</code> bandejas <code>202×202 mm</code>) orientadas em <code>Z=0</code>: <a href="./data/GOG10_REV7_1_PACOTE_GRAFICA_3D_STL.zip" download style="color:#0f766e;font-weight:700;text-decoration:underline;">Baixar Pacote STL Completo (.ZIP · 2,87 MB)</a>.</span>
     </div>
   </header>
 
@@ -46,7 +46,7 @@
     <section id="sec-overview" class="page-section active">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Arquitetura Industrial em Camadas ("Cebola") · Etapa 3 CAD</p>
+          <p class="eyebrow">Arquitetura Industrial em Camadas ("Cebola") · Etapa 3/4 CAD + STL</p>
           <h2>Gabinete vertical monolítico de <code>294,0 × 436,0 × 624,9 mm</code> integrando servidor, rede óptica e energia em cabo único</h2>
           <p class="lead">
             Projetado ao redor da placa-mãe reaproveitada <strong>Lenovo GOG10 LA-L161P</strong> em montagem vertical pelo lado curto, combinada ao roteador <strong>Mercusys MR30G</strong> (baía RF aberta com 4 antenas), terminação óptica <strong>ONT FD511G</strong>, distribuição elétrica <strong>iCLAMPER Energia 5</strong> e ventilação em dois circuitos separados.
@@ -66,17 +66,18 @@
             <div class="spec-item">
               <span class="spec-label">Mecanismos &amp; Integridade</span>
               <strong class="spec-val">7 gavetas · 26 colunas</strong>
-              <span class="spec-note">BFS 795/800 firmes · 0 colisões fora da lista · 0 vazamentos</span>
+              <span class="spec-note">505/505 STLs 1 ilha (nm=0) · 0 sobreposições &gt;0,20 mm</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Afastamentos &amp; Massas</span>
               <strong class="spec-val">34,52 / 30,44 mm RF</strong>
-              <span class="spec-note">9,397 kg leve · 10,845 kg nominal · 13,634 kg cons.</span>
+              <span class="spec-note">12.054,3 cm³ plástico (~6,32 kg impresso · 90 mesas)</span>
             </div>
           </div>
 
           <div class="hero-actions">
-            <button class="btn btn-primary" data-jump-section="vistas">Explorar 30 Vistas</button>
+            <a class="btn btn-primary" href="./data/GOG10_REV7_1_PACOTE_GRAFICA_3D_STL.zip" download style="text-decoration:none;">⬇ Baixar Pacote STL Gráfica 3D (.ZIP · 2,87 MB)</a>
+            <button class="btn btn-secondary" data-jump-section="vistas">Explorar 30 Vistas</button>
             <button class="btn btn-secondary" data-jump-section="viewer3d">Abrir Explodido 3D Interativo</button>
             <button class="btn btn-secondary" data-jump-section="dimensoes">Consultar Tabela Dimensional</button>
           </div>
@@ -274,7 +275,10 @@
             <strong>(1) dimensão da peça montada</strong>, <strong>(2) dimensão na orientação de impressão recomendada</strong> e <strong>(3) dimensão de conjunto montado</strong>.
           </p>
         </div>
-        <button class="btn btn-primary" id="btn-export-csv">Exportar Tabela (CSV)</button>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="./data/GOG10_REV7_1_PACOTE_GRAFICA_3D_STL.zip" download style="text-decoration:none;">⬇ Baixar STLs Gráfica 3D (.ZIP · 2,87 MB)</a>
+          <button class="btn btn-secondary" id="btn-export-csv">Exportar Tabela (CSV)</button>
+        </div>
       </div>
 
       <!-- RESUMOS DE CONJUNTO MONTADO (NÃO CONFUNDIR COM PEÇAS INDIVIDUAIS) -->
