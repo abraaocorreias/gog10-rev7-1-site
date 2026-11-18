@@ -36,16 +36,18 @@ const GROUP_HERO_MAP = [
 ];
 
 async function loadAllData() {
-  const [vRes, dRes, mRes, manRes] = await Promise.all([
+  const [vRes, dRes, mRes, manRes, propRes] = await Promise.all([
     fetch("./data/rev7_1_site_views.json").then((r) => r.json()),
     fetch("./data/rev7_1_site_dimensions.json").then((r) => r.json()),
     fetch("./data/rev7_1_site_modules.json").then((r) => r.json()),
     fetch("./data/rev7_1_render_manifest.json").then((r) => r.json()),
+    fetch("./data/rev7_1_stl_propositos.json").then((r) => r.json()).catch(() => null),
   ]);
   state.viewsData = vRes;
   state.dimData = dRes;
   state.modData = mRes;
   state.manifestData = manRes;
+  state.propData = propRes;
   for (const r of dRes.itens) {
     state.dimByName[r.nome] = r;
     state.dimById[r.id] = r;
@@ -75,6 +77,50 @@ function switchSection(sec) {
 }
 
 function initOverview() {
+  const pGrid = document.getElementById("propositos-stl-grid");
+  if (pGrid && state.propData?.propositos) {
+    pGrid.innerHTML = state.propData.propositos.map((p) => `
+      <div class="panel-card" style="padding:18px 20px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:10px;">
+          <div>
+            <span class="vista-code-tag" style="margin-bottom:6px;display:inline-block;">${p.proposito}</span>
+            <h4 style="margin:4px 0;font-size:1.05rem;">${p.titulo}</h4>
+            <p class="small-note" style="margin:2px 0;"><strong>Propósito:</strong> ${p.objetivo}</p>
+            <p class="small-note" style="margin:4px 0;color:#0f766e;"><strong>Como Montar:</strong> ${p.como_montar}</p>
+            <p class="small-note" style="margin:2px 0;"><strong>Vistas de Referência no Site:</strong> <code>${p.vistas_ref}</code> · <strong>Total do Grupo:</strong> <code>${p.pecas} peças</code> em <code>${p.mesas_202x202} bandejas 202×202 mm</code> (~<code>${p.peso_estimado_g} g</code>)</p>
+          </div>
+          <a class="btn btn-primary" href="${p.zip_arquivo}" download style="text-decoration:none;white-space:nowrap;">⬇ Baixar ${p.proposito} (.ZIP · ${p.zip_mb} MB)</a>
+        </div>
+        <div class="table-scroll">
+          <table class="mini-table" style="width:100%;">
+            <thead>
+              <tr>
+                <th>Subgrupo Funcional</th>
+                <th>Material de Impressão</th>
+                <th>Cor Indicada</th>
+                <th class="num">Peças</th>
+                <th class="num">Bandejas 202×202</th>
+                <th class="num">Peso Est.</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${p.subgrupos.map((sb) => `
+                <tr>
+                  <td><code>${sb.subgrupo}</code><div class="small-note">${sb.funcao}</div></td>
+                  <td><strong>${sb.material}</strong></td>
+                  <td><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:${sb.cor_hex};border:1px solid #9ca3af;vertical-align:middle;margin-right:6px;"></span>${sb.cor}</td>
+                  <td class="num">${sb.pecas}</td>
+                  <td class="num">${sb.mesas_202x202}</td>
+                  <td class="num"><strong>~${sb.peso_estimado_g} g</strong></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `).join("");
+  }
+
   const gGrid = document.getElementById("groups-overview-grid");
   gGrid.innerHTML = GROUP_HERO_MAP.map((g) => `
     <article class="group-card" data-jump-group="${g.grupo}">
