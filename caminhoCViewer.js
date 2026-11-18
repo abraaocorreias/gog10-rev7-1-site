@@ -96,7 +96,7 @@ export class CaminhoCViewer {
     if (/^LASER0[1-5]_/.test(name)) return "laser_ext";
     if (/^LASER(0[6-9]|10)/.test(name)) return "laser_int";
     if (/^(LASER11_|COMERCIAL_)/.test(name)) return "alu_comercial";
-    if (/^CAMC2/.test(name)) return "petg_3d";
+    if (/^CAMC[23]/.test(name)) return "petg_3d";
     return "hardware";
   }
 
@@ -185,11 +185,11 @@ export class CaminhoCViewer {
   setPreset(preset) {
     const c = this.center;
     const map = {
-      iso: [c.x + 1020, c.y + 340, c.z - 820],      // Frontal-Direita completa (Baia RF + 5 Frisos)
-      front: [c.x + 1180, c.y + 50, c.z],           // Fachada +X
-      rear: [c.x - 1080, c.y + 210, c.z + 720],     // Traseira -X / Alumínio 135W / FAN1
-      cutaway: [c.x + 920, c.y + 290, c.z - 740],   // Corte interno completo
-      top: [c.x + 40, c.y + 1240, c.z - 120],
+      iso: [c.x + 1040, c.y + 340, c.z - 840],      // Frontal-Direita completa (Plinto 13mm + Coroa 18mm + 5 Frisos + Baia RF)
+      front: [c.x + 1200, c.y + 50, c.z],           // Fachada +X
+      rear: [c.x - 1100, c.y + 220, c.z + 720],     // Traseira -X (Unico Acesso: 2 Portas + FAN1/FAN2 + Painel I/O) + Lateral Esq 100% Lisa
+      cutaway: [c.x - 980, c.y + 240, c.z + 740],   // Corte interno traseiro (abre Traseira -X e Lateral Esq p/ ver LA-L161P, Aluminio 135W, ONT e iCLAMPER)
+      top: [c.x + 40, c.y + 1260, c.z - 120],
     };
     const p = map[preset] || map.iso;
     this.camera.position.set(p[0], p[1], p[2]);
@@ -198,12 +198,7 @@ export class CaminhoCViewer {
 
     if (preset === "cutaway") {
       for (const m of this.meshes) {
-        if (/^LASER0[235]_/.test(m.userData.camcName)) m.visible = false;
-        else m.visible = this.layerVis[m.userData.camcLayer];
-      }
-    } else if (preset === "rear") {
-      for (const m of this.meshes) {
-        if (/^LASER01_/.test(m.userData.camcName)) m.visible = false;
+        if (/^LASER0[14]_/.test(m.userData.camcName)) m.visible = false;
         else m.visible = this.layerVis[m.userData.camcLayer];
       }
     } else {
