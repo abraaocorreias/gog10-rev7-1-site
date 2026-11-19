@@ -783,11 +783,11 @@ function initCaminhoCViewerIfNeeded() {
   const host = document.getElementById("camc-three-host");
   if (!host) return;
   const layerLabels = {
-    laser_ext: "Chapa Externa Cortada a Laser (3,0 mm)",
-    laser_int: "Chapa Interna / Prateleira / Cassete (3,0 mm)",
-    alu_comercial: "Alumínio 2 mm / Corrediça Mini / Espaçador Latão",
-    petg_3d: "Peça Funcional Impressa em 3D (PETG Comum)",
-    hardware: "Hardware Real (Equipamento Existente)",
+    laser_ext: "Acrílico Cast Opaco Externo 4,0 mm (#ECEAE4 + Grade Suíça 2 mm)",
+    laser_int: "Acrílico Cast Opaco Preto Interno 3,0 mm (#141619 · Bloqueio Óptico)",
+    alu_comercial: "Alumínio 2 mm (Fonte 135 W) + Corrediça + Latão",
+    petg_3d: "Peça Funcional Impressa em 3D (PETG Comum · 17 peças)",
+    hardware: "Hardware Real + Filtro iCLAMPER + Cabo AC Único & Fibra",
   };
   state.camcViewer = new CaminhoCViewer(host, (name, layer) => {
     const body = document.getElementById("camc-selection-body");
@@ -854,6 +854,13 @@ function renderCaminhoCDxfSheet(sh) {
     `;
   }).join("");
 
+  const groovesSvg = (sh.grooves || []).map(([x0, y0, x1, y1]) => {
+    const rw = Math.max(1.2, x1 - x0);
+    const rh = Math.max(1.2, y1 - y0);
+    const sy = flipY(y1);
+    return `<rect x="${x0}" y="${sy}" width="${rw}" height="${rh}" fill="rgba(192,132,252,0.58)" stroke="#c084fc" stroke-width="0.9" />`;
+  }).join("");
+
   const circsSvg = (sh.circles || []).map(([cx, cy, r]) => {
     const isFan = r >= 20;
     return `<circle cx="${cx}" cy="${flipY(cy)}" r="${Math.max(r, 2.2)}" fill="${isFan ? "rgba(16,185,129,0.18)" : "#34d399"}" stroke="#10b981" stroke-width="${isFan ? 2.2 : 1.0}" />`;
@@ -861,6 +868,7 @@ function renderCaminhoCDxfSheet(sh) {
 
   svg.innerHTML = `
     <rect x="0" y="0" width="${sh.w}" height="${sh.h}" fill="rgba(56,189,248,0.08)" stroke="#38bdf8" stroke-width="2.4" />
+    ${groovesSvg}
     ${rectsSvg}
     ${circsSvg}
     <text x="${sh.w / 2}" y="-9" fill="#bae6fd" font-size="13" text-anchor="middle" font-family="monospace">${sh.w} mm</text>
@@ -876,13 +884,14 @@ function renderCaminhoCDxfSheet(sh) {
         <tr><td>Arquivo <code>.DXF</code></td><td><code>${sh.fname}</code></td></tr>
         <tr><td>Dimensão 1:1</td><td><strong>${sh.w} × ${sh.h} × ${sh.espessura_mm} mm</strong></td></tr>
         <tr><td>Material</td><td><strong>${sh.material}</strong></td></tr>
-        <tr><td>Recortes / Furos</td><td><strong>${(sh.rects || []).length} recortes</strong> · <strong>${(sh.circles || []).length} furos circulares</strong></td></tr>
+        <tr><td>Recortes / Sulcos / Furos</td><td><strong>${(sh.rects || []).length} recortes</strong> · <strong>${(sh.grooves || []).length} sulcos 2 mm</strong> · <strong>${(sh.circles || []).length} furos</strong></td></tr>
       </tbody>
     </table>
-    <div style="margin-top:12px;font-size:0.82rem;color:#475569;">
-      <span style="color:#0284c7;font-weight:700;">■ Azul:</span> Contorno externo 1:1 &nbsp;·&nbsp;
-      <span style="color:#d97706;font-weight:700;">■ Âmbar:</span> Janelas / fendas / rasgos &nbsp;·&nbsp;
-      <span style="color:#059669;font-weight:700;">● Verde:</span> Furos circulares (Ø76 mm / H1..H21 / M3)
+    <div style="margin-top:12px;font-size:0.82rem;color:#475569;line-height:1.55;">
+      <span style="color:#0284c7;font-weight:700;">■ Azul:</span> Contorno 1:1 &nbsp;·&nbsp;
+      <span style="color:#d97706;font-weight:700;">■ Âmbar:</span> Janelas / frisos cápsula / saída AC &nbsp;·&nbsp;
+      <span style="color:#9333ea;font-weight:700;">■ Lilás:</span> Sulcos Grade Suíça 2,0 × 1,8 mm (laser/CNC) &nbsp;·&nbsp;
+      <span style="color:#059669;font-weight:700;">● Verde:</span> Furos (Ø76 mm / H1..H21 / M3)
     </div>
   `;
 }

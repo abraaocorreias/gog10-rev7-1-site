@@ -1,43 +1,43 @@
 {
-  "versao": "Caminho C v3 — Monólito em Acrílico Cast Opaco (Zero MDF · Acesso 100% Traseiro)",
-  "envoltoria_mm": "294 × 436 × 608 mm",
+  "versao": "Caminho C v3.1 — Acrílico Cast Opaco com Grade Suíça REV7.1 + Saída Cabo AC iCLAMPER",
+  "envoltoria_mm": "294 × 436 × 624,9 mm",
   "espessura_chapa_mm": 4.0,
-  "pecas_3d_count": 16,
+  "pecas_3d_count": 17,
   "bandejas_3d_count": 3,
-  "peso_3d_g": 234.3,
-  "horas_3d_h": 8.0,
-  "volume_3d_cm3": 374.8,
+  "peso_3d_g": 263.5,
+  "horas_3d_h": 9.0,
+  "volume_3d_cm3": 421.7,
   "stl_bad_count": 0,
   "chapas_laser_count": 11,
-  "peso_total_acrilico_kg": 8.9,
-  "custo_estimado_brl": "R$ 590 – R$ 950",
+  "peso_total_acrilico_kg": 9.1,
+  "custo_estimado_brl": "R$ 650 – R$ 990",
   "zip_arquivo": "./data/GOG10_CAMINHO_C_V3_ACRILICO_OPACO_STL_E_DXF.zip",
   "zip_mb": 0.05,
   "glb_arquivo": "./models/caminho_c_v2.glb",
-  "glb_mb": 6.25,
+  "glb_mb": 6.52,
   "renders": [
     {
       "id": "C01",
-      "titulo": "Exterior Monolítico em Acrílico Cast Opaco (#ECEAE4 · Zero Transparência)",
-      "legenda": "Estética Braun/Rams 100% restaurada: plinto flutuante de 13 mm, coroa superior de 18 mm sobre fresta negra de 8 mm, 5 frisos verticais com câmara preta opaca atrás (zero visão interna!) e avental #ECEAE4 escondendo o corpo do MR30G abaixo de Z=72 mm.",
+      "titulo": "Exterior em Acrílico Cast Opaco com Grade Suíça REV7.1 & 4 Andares de Frisos Cápsula",
+      "legenda": "Todo o charme original do REV7.1 reproduzido diretamente no Acrílico Cast Opaco 4 mm (#ECEAE4): os 4 andares de 5 frisos cápsula de 8 mm (R=4 mm, passo 22 mm, com câmara preta opaca atrás), os sulcos retangulares de 2 mm da grade suíça, alcova RF em balanço até Z=359 mm, coroa de 21 mm sobre fresta de 8 mm e plinto flutuante.",
       "src": "./renders/caminho_c_v2/c_v2_01_externo_monolito.png"
     },
     {
       "id": "C02",
-      "titulo": "Face Traseira (-X · Único Acesso) & Lateral Esquerda 100% Lisa e Fechada",
-      "legenda": "Lateral esquerda 100% lisa e sem nenhum furo ou acesso. Toda a manutenção concentra-se na face traseira (-X, oposta ao roteador): 2 portas opacas #ECEAE4 com dobradiça oculta/ímãs, aberturas Ø 76 mm de FAN1 e FAN2 (exaustão da fonte 135 W) e Painel I/O.",
+      "titulo": "Traseira (-X · Único Acesso) com Grade Suíça, 2 Portas & Saída do Cabo AC do Filtro de Linha",
+      "legenda": "Lateral direita sem porta lateral; face traseira (-X, oposta ao roteador) alinhando as 2 portas opacas à grade suíça, FAN1/FAN2 Ø76 mm, Painel I/O e a GOLA DE SAÍDA DO CABO ÚNICO AC DO iCLAMPER + FIBRA (CAMC3-17) no canto inferior!",
       "src": "./renders/caminho_c_v2/c_v2_04_traseira_termica_aluminio.png"
     },
     {
       "id": "C03",
-      "titulo": "Acesso Interno Real pela Traseira (-X): Placa-Mãe, Alumínio 135 W, ONT & iCLAMPER",
-      "legenda": "Ao abrir as 2 portas traseiras (-X): placa-mãe LA-L161P virada diretamente para você sobre 8 espaçadores latão M2.5×14 mm, Fonte 135 W na base de alumínio 2 mm com exaustão direta p/ FAN2 traseiro, iCLAMPER deslizante p/ trás e ONT acessível sem tocar nas laterais.",
+      "titulo": "Acesso Interno pela Traseira (-X): Placa-Mãe, Alumínio 135 W, iCLAMPER & Descida do Cabo AC",
+      "legenda": "Mostra o trajeto real do cabo único AC saindo do filtro de linha iCLAMPER (Z=222 mm), descendo pelo recorte dedicado na prateleira Z=194 até sair pela gola CAMC3-17 no pé da face traseira, além da LA-L161P e Fonte 135 W na placa de alumínio.",
       "src": "./renders/caminho_c_v2/c_v2_02_corte_interno_hardware.png"
     },
     {
       "id": "C04",
-      "titulo": "Explodido Híbrido (Chapas Acrílico Cast Opaco × 16 Peças 3D em PETG × Hardware)",
-      "legenda": "Separação limpa das chapas inteiriças de Acrílico Cast Opaco (4 mm externo #ECEAE4 + 3 mm interno Preto Fosco #141619), base de alumínio 2 mm e apenas 16 peças funcionais impressas em PETG comum destacadas em verde-petróleo.",
+      "titulo": "Explodido Híbrido (Acrílico Cast Opaco c/ Grade Suíça × 17 Peças 3D em PETG × Hardware)",
+      "legenda": "Separação entre as chapas de Acrílico Cast Opaco 4 mm (com sulcos 2 mm e frisos cápsula), as divisórias em Acrílico Preto Opaco 3 mm, a base de alumínio 2 mm e as apenas 17 peças impressas em PETG comum.",
       "src": "./renders/caminho_c_v2/c_v2_03_explodido_hibrido.png"
     }
   ],
@@ -50,9 +50,9 @@
         15.4,
         11.5
       ],
-      "vol_cm3": 19.022,
-      "peso_g": 11.9,
-      "horas_h": 0.42,
+      "vol_cm3": 19.742,
+      "peso_g": 12.3,
+      "horas_h": 0.43,
       "funcao": "Trilho em U de peça única (oculto abaixo do piso Z=68 mm) sem metal perto das 4 antenas"
     },
     {
@@ -63,9 +63,9 @@
         15.4,
         11.5
       ],
-      "vol_cm3": 19.022,
-      "peso_g": 11.9,
-      "horas_h": 0.42,
+      "vol_cm3": 19.742,
+      "peso_g": 12.3,
+      "horas_h": 0.43,
       "funcao": "Trilho em U de peça única (oculto abaixo do piso Z=68 mm) sem metal perto das 4 antenas"
     },
     {
@@ -74,10 +74,10 @@
       "dims": [
         55.0,
         12.0,
-        11.0
+        10.5
       ],
-      "vol_cm3": 4.62,
-      "peso_g": 2.9,
+      "vol_cm3": 4.455,
+      "peso_g": 2.8,
       "horas_h": 0.15,
       "funcao": "Presilha interna parafusada na bandeja mantendo o MR30G centrado nas 4 fendas U"
     },
@@ -87,10 +87,10 @@
       "dims": [
         55.0,
         12.0,
-        11.0
+        10.5
       ],
-      "vol_cm3": 4.62,
-      "peso_g": 2.9,
+      "vol_cm3": 4.455,
+      "peso_g": 2.8,
       "horas_h": 0.15,
       "funcao": "Presilha interna parafusada na bandeja mantendo o MR30G centrado nas 4 fendas U"
     },
@@ -100,12 +100,12 @@
       "dims": [
         60.0,
         144.0,
-        41.0
+        54.9
       ],
-      "vol_cm3": 59.883,
-      "peso_g": 37.4,
-      "horas_h": 1.2,
-      "funcao": "Túnel aberto que conduz o ar quente do blower direto para a fresta negativa oculta de 8 mm sob a coroa"
+      "vol_cm3": 77.494,
+      "peso_g": 48.4,
+      "horas_h": 1.54,
+      "funcao": "Túnel aberto conduzindo o ar quente do blower direto à fresta oculta de 8 mm sob a coroa de 21 mm"
     },
     {
       "id": "CAMC3-06",
@@ -113,12 +113,12 @@
       "dims": [
         60.0,
         132.0,
-        41.0
+        54.9
       ],
-      "vol_cm3": 55.671,
-      "peso_g": 34.8,
-      "horas_h": 1.12,
-      "funcao": "Túnel aberto que conduz o ar quente do blower direto para a fresta negativa oculta de 8 mm sob a coroa"
+      "vol_cm3": 72.115,
+      "peso_g": 45.1,
+      "horas_h": 1.44,
+      "funcao": "Túnel aberto conduzindo o ar quente do blower direto à fresta oculta de 8 mm sob a coroa de 21 mm"
     },
     {
       "id": "CAMC3-07",
@@ -131,7 +131,7 @@
       "vol_cm3": 7.768,
       "peso_g": 4.9,
       "horas_h": 0.2,
-      "funcao": "Abraçadeira parafusada na placa de alumínio 2 mm (elimina 100% do plástico caro PC-ABS FR)"
+      "funcao": "Abraçadeira parafusada na placa de alumínio 2 mm (elimina 100% do PC-ABS FR)"
     },
     {
       "id": "CAMC3-08",
@@ -144,7 +144,7 @@
       "vol_cm3": 7.768,
       "peso_g": 4.9,
       "horas_h": 0.2,
-      "funcao": "Abraçadeira parafusada na placa de alumínio 2 mm (elimina 100% do plástico caro PC-ABS FR)"
+      "funcao": "Abraçadeira parafusada na placa de alumínio 2 mm (elimina 100% do PC-ABS FR)"
     },
     {
       "id": "CAMC3-09",
@@ -157,7 +157,7 @@
       "vol_cm3": 12.838,
       "peso_g": 8.0,
       "horas_h": 0.3,
-      "funcao": "Par de garras de extremidade para segurar a bateria real de 212×68×9,5 mm atrás do cassete"
+      "funcao": "Par de garras de extremidade para a bateria real de 212×68×9,5 mm atrás do cassete"
     },
     {
       "id": "CAMC3-10",
@@ -170,7 +170,7 @@
       "vol_cm3": 12.838,
       "peso_g": 8.0,
       "horas_h": 0.3,
-      "funcao": "Par de garras de extremidade para segurar a bateria real de 212×68×9,5 mm atrás do cassete"
+      "funcao": "Par de garras de extremidade para a bateria real de 212×68×9,5 mm atrás do cassete"
     },
     {
       "id": "CAMC3-11",
@@ -183,7 +183,7 @@
       "vol_cm3": 40.381,
       "peso_g": 25.2,
       "horas_h": 0.83,
-      "funcao": "Berço da ONT acessível diretamente pela porta traseira inferior (-X) com guia de fibra"
+      "funcao": "Berço da ONT acessível pela porta traseira inferior (-X)"
     },
     {
       "id": "CAMC3-12",
@@ -196,7 +196,7 @@
       "vol_cm3": 86.314,
       "peso_g": 53.9,
       "horas_h": 1.71,
-      "funcao": "Berço duplo fixo no deck Z=360 acessível diretamente pela porta traseira superior (-X)"
+      "funcao": "Berço duplo fixo no deck Z=360 acessível pela porta traseira superior (-X)"
     },
     {
       "id": "CAMC3-13",
@@ -209,7 +209,7 @@
       "vol_cm3": 15.3,
       "peso_g": 9.6,
       "horas_h": 0.34,
-      "funcao": "Moldura traseira (-X) com 3 janelas abertas para keystones RJ45, HDMI e botão Power SW1"
+      "funcao": "Moldura traseira (-X) com 3 janelas abertas para RJ45, HDMI e botão Power SW1"
     },
     {
       "id": "CAMC3-14",
@@ -222,7 +222,7 @@
       "vol_cm3": 9.6,
       "peso_g": 6.0,
       "horas_h": 0.23,
-      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X) — zero ferragem aparente por fora!"
+      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X)"
     },
     {
       "id": "CAMC3-15",
@@ -235,7 +235,7 @@
       "vol_cm3": 9.6,
       "peso_g": 6.0,
       "horas_h": 0.23,
-      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X) — zero ferragem aparente por fora!"
+      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X)"
     },
     {
       "id": "CAMC3-16",
@@ -248,276 +248,486 @@
       "vol_cm3": 9.6,
       "peso_g": 6.0,
       "horas_h": 0.23,
-      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X) — zero ferragem aparente por fora!"
+      "funcao": "Dobradiça oculta / fecho magnético interno das 2 portas traseiras (-X)"
+    },
+    {
+      "id": "CAMC3-17",
+      "nome": "GOLA_Saida_Cabo_AC_Filtro_iClamper_e_Fibra",
+      "dims": [
+        38.0,
+        29.0,
+        15.0
+      ],
+      "vol_cm3": 11.67,
+      "peso_g": 7.3,
+      "horas_h": 0.27,
+      "funcao": "Passa-cabo traseiro inferior (-X, Y=+64..+98 mm) com alívio de tração para o Cabo Único AC do iCLAMPER e entrada da fibra óptica"
     }
   ],
   "chapas_laser": [
     {
       "id": "LASER-01",
-      "fname": "CHAPA_01_Lateral_Esquerda_100Pct_Lisa_AcrilicoOpaco_4mm_294x566mm.dxf",
-      "nome": "Lateral Esquerda (-Y · 100% Lisa, Fechada e Opaca — Zero Acesso Lateral)",
-      "material": "Acrílico Cast Opaco Fosco Off-White #ECEAE4 (4,0 mm · Nada Transparente)",
+      "fname": "CHAPA_01_Lateral_Esq_GradeSuica_AcrilicoOpaco_4mm_294x575mm.dxf",
+      "nome": "Lateral Esquerda (-Y · 100% Fechada c/ Grade Suíça 2 mm gravada a laser)",
+      "material": "Acrílico Cast Opaco Fosco #ECEAE4 (4,0 mm · Camada SULCO_GRADE_SUICA_2MM)",
       "espessura_mm": 4.0,
       "w": 294.0,
-      "h": 566.0,
+      "h": 574.9,
       "rects": [],
+      "grooves": [
+        [
+          0.0,
+          179.0,
+          294.0,
+          181.0,
+          "SULCO_T1_T2"
+        ],
+        [
+          0.0,
+          338.0,
+          294.0,
+          340.0,
+          "SULCO_T2_T3"
+        ],
+        [
+          0.0,
+          517.0,
+          294.0,
+          519.0,
+          "SULCO_T3_T4"
+        ],
+        [
+          160.0,
+          0.0,
+          162.0,
+          574.9,
+          "SULCO_COL_E_D"
+        ]
+      ],
       "circles": [],
-      "funcao": "Parede esquerda monolítica 100% fechada (sem nenhum furo de ventoinha nem porta lateral); fixa internamente por cantoneiras ocultas (zero parafuso aparente!)"
+      "funcao": "100% fechada sem nenhum acesso ou furo lateral; preserva exatamente os 8 retângulos da grade suíça REV7.1 via sulco de 2,0 mm × 1,8 mm"
     },
     {
       "id": "LASER-02",
-      "fname": "CHAPA_02_Lateral_Direita_BaiaAntenas_AcrilicoOpaco_4mm_294x566mm.dxf",
-      "nome": "Lateral Direita (+Y · Fechada, Apenas Recorte Superior da Baía RF Z=72..255)",
-      "material": "Acrílico Cast Opaco Fosco Off-White #ECEAE4 (4,0 mm · Nada Transparente)",
+      "fname": "CHAPA_02_Lateral_Dir_GradeSuica_BaiaRF_AcrilicoOpaco_4mm_294x575mm.dxf",
+      "nome": "Lateral Direita (+Y · Grade Suíça 2 mm + Alcova das 4 Antenas Z=68..359)",
+      "material": "Acrílico Cast Opaco Fosco #ECEAE4 (4,0 mm · Zero Acesso Lateral)",
       "espessura_mm": 4.0,
       "w": 294.0,
-      "h": 566.0,
+      "h": 574.9,
       "rects": [
         [
-          224.0,
-          56.0,
+          226.0,
+          47.0,
           294.0,
-          239.0,
-          "ALCOVA_ABERTA_4_ANTENAS_Z72_255_ZERO_PORTA_LATERAL"
+          338.0,
+          "ALCOVA_4_ANTENAS_Z68_359"
+        ]
+      ],
+      "grooves": [
+        [
+          0.0,
+          179.0,
+          226.0,
+          181.0,
+          "SULCO_T1_T2"
+        ],
+        [
+          0.0,
+          338.0,
+          294.0,
+          340.0,
+          "SULCO_T2_T3"
+        ],
+        [
+          0.0,
+          517.0,
+          294.0,
+          519.0,
+          "SULCO_T3_T4"
+        ],
+        [
+          160.0,
+          0.0,
+          162.0,
+          574.9,
+          "SULCO_COL_E_D"
         ]
       ],
       "circles": [],
-      "funcao": "Parede direita 100% sem portas laterais; o recorte em L da baía RF começa só em Z=72 mm escondendo totalmente a bandeja abaixo"
+      "funcao": "Preserva exatamente os retângulos da grade suíça REV7.1 e a alcova RF em balanço até Z=359 mm sem nenhuma porta lateral"
     },
     {
       "id": "LASER-03",
-      "fname": "CHAPA_03_Fachada_Frontal_5Frisos_e_Baia_AcrilicoOpaco_4mm_428x566mm.dxf",
-      "nome": "Fachada Frontal (+X · 5 Frisos Braun + Recorte Baía RF acima de Z=72 mm)",
-      "material": "Acrílico Cast Opaco Fosco Off-White #ECEAE4 (4,0 mm · Nada Transparente)",
+      "fname": "CHAPA_03_Fachada_Frontal_4Andares_5FrisosCapsula_GradeSuica_AcrilicoOpaco_4mm.dxf",
+      "nome": "Fachada Frontal (+X · 4 Andares × 5 Frisos Cápsula 8 mm + Grade Suíça 2 mm + Baía RF)",
+      "material": "Acrílico Cast Opaco Fosco #ECEAE4 (4,0 mm · Design Original REV7.1 no Acrílico!)",
       "espessura_mm": 4.0,
       "w": 428.0,
-      "h": 566.0,
+      "h": 574.9,
       "rects": [
         [
-          22.0,
-          32.0,
-          32.0,
-          534.0,
-          "FRISO_1"
-        ],
-        [
+          34.0,
+          35.0,
           42.0,
-          32.0,
-          52.0,
-          534.0,
-          "FRISO_2"
+          176.0,
+          "F1_1"
         ],
         [
-          62.0,
-          32.0,
-          72.0,
-          534.0,
-          "FRISO_3"
-        ],
-        [
-          82.0,
-          32.0,
-          92.0,
-          534.0,
-          "FRISO_4"
-        ],
-        [
-          102.0,
-          32.0,
-          112.0,
-          534.0,
-          "FRISO_5"
-        ],
-        [
-          226.0,
           56.0,
-          428.0,
-          239.0,
-          "JANELA_BAIA_RF_4_ANTENAS_Z72_255"
+          35.0,
+          64.0,
+          176.0,
+          "F1_2"
         ],
         [
-          226.0,
+          78.0,
+          35.0,
+          86.0,
+          176.0,
+          "F1_3"
+        ],
+        [
+          100.0,
+          35.0,
+          108.0,
+          176.0,
+          "F1_4"
+        ],
+        [
+          122.0,
+          35.0,
+          130.0,
+          176.0,
+          "F1_5"
+        ],
+        [
+          34.0,
+          184.0,
+          42.0,
+          335.0,
+          "F2_1"
+        ],
+        [
+          56.0,
+          184.0,
+          64.0,
+          335.0,
+          "F2_2"
+        ],
+        [
+          78.0,
+          184.0,
+          86.0,
+          335.0,
+          "F2_3"
+        ],
+        [
+          100.0,
+          184.0,
+          108.0,
+          335.0,
+          "F2_4"
+        ],
+        [
+          122.0,
+          184.0,
+          130.0,
+          335.0,
+          "F2_5"
+        ],
+        [
+          34.0,
+          343.0,
+          42.0,
+          514.0,
+          "F3_1"
+        ],
+        [
+          56.0,
+          343.0,
+          64.0,
+          514.0,
+          "F3_2"
+        ],
+        [
+          78.0,
+          343.0,
+          86.0,
+          514.0,
+          "F3_3"
+        ],
+        [
+          100.0,
+          343.0,
+          108.0,
+          514.0,
+          "F3_4"
+        ],
+        [
+          122.0,
+          343.0,
+          130.0,
+          514.0,
+          "F3_5"
+        ],
+        [
+          34.0,
+          522.0,
+          42.0,
+          563.0,
+          "F4_1"
+        ],
+        [
+          56.0,
+          522.0,
+          64.0,
+          563.0,
+          "F4_2"
+        ],
+        [
+          78.0,
+          522.0,
+          86.0,
+          563.0,
+          "F4_3"
+        ],
+        [
+          100.0,
+          522.0,
+          108.0,
+          563.0,
+          "F4_4"
+        ],
+        [
+          122.0,
+          522.0,
+          130.0,
+          563.0,
+          "F4_5"
+        ],
+        [
+          190.5,
+          47.0,
+          428.0,
+          338.0,
+          "JANELA_BAIA_RF_Z68_359"
+        ]
+      ],
+      "grooves": [
+        [
           0.0,
-          405.0,
-          53.0,
-          "AVENTAL_FRONTAL_GAVETA_MR30G_RENTE_ECEAE4"
+          179.0,
+          190.5,
+          181.0,
+          "SULCO_T1_T2"
+        ],
+        [
+          0.0,
+          338.0,
+          428.0,
+          340.0,
+          "SULCO_T2_T3"
+        ],
+        [
+          0.0,
+          517.0,
+          428.0,
+          519.0,
+          "SULCO_T3_T4"
+        ],
+        [
+          167.9,
+          0.0,
+          169.9,
+          574.9,
+          "SULCO_COL_F_M"
+        ],
+        [
+          250.4,
+          339.0,
+          252.4,
+          574.9,
+          "SULCO_COL_M_R"
         ]
       ],
       "circles": [],
-      "funcao": "Fachada icônica com 5 frisos Braun (com câmara preta opaca atrás!) e avental frontal #ECEAE4 ocultando o roteador abaixo de Z=72 mm"
+      "funcao": "Reproduz fielmente o design original REV7.1 em Acrílico Cast Opaco: os 4 andares de 5 frisos cápsula de 8 mm (com câmara preta atrás), alcova RF em balanço até Z=359 mm e todas as linhas retangulares da grade suíça!"
     },
     {
       "id": "LASER-04",
-      "fname": "CHAPA_04_Traseira_UnicoAcesso_2Portas_FAN1_FAN2_IO_AcrilicoOpaco_4mm_428x566mm.dxf",
-      "nome": "Traseira (-X · ÚNICO ACESSO: 2 Portas Opacas #ECEAE4 + FAN1/FAN2 Ø76 + I/O)",
-      "material": "Acrílico Cast Opaco Fosco Off-White #ECEAE4 (4,0 mm · Portas Cortadas na Mesma Chapa!)",
+      "fname": "CHAPA_04_Traseira_UnicoAcesso_2Portas_SaidaCaboAC_iClamper_AcrilicoOpaco_4mm.dxf",
+      "nome": "Traseira (-X · Único Acesso: Grade Suíça + 2 Portas + FAN1/FAN2 + I/O + SAÍDA CABO AC iCLAMPER)",
+      "material": "Acrílico Cast Opaco Fosco #ECEAE4 (4,0 mm · Saída do Cabo Único AC no Canto Inferior +Y)",
       "espessura_mm": 4.0,
       "w": 428.0,
-      "h": 566.0,
+      "h": 574.9,
       "rects": [
         [
-          18.0,
-          348.0,
-          410.0,
-          552.0,
-          "PORTA_TRASEIRA_SUPERIOR_MOD4_PLACAMAE_HUB_SSD"
+          252.0,
+          340.0,
+          424.0,
+          517.0,
+          "PORTA_TRASEIRA_CLIQUE_T3_PLACAMAE_HUB_SSD"
         ],
         [
-          18.0,
-          12.0,
-          410.0,
-          174.0,
-          "PORTA_TRASEIRA_INFERIOR_ONT_FIBRA_CABOS_MR30G"
+          252.0,
+          2.0,
+          424.0,
+          179.0,
+          "PORTA_TRASEIRA_CLIQUE_T1_ONT_FIBRA_CABOS"
         ],
         [
           236.0,
-          186.0,
+          182.0,
           381.0,
-          228.0,
-          "RECORTE_PAINEL_IO_RJ45_HDMI_SW1_AC"
+          224.0,
+          "RECORTE_PAINEL_IO_RJ45_HDMI_SW1"
+        ],
+        [
+          378.0,
+          0.0,
+          412.0,
+          28.0,
+          "SAIDA_CABO_AC_FILTRO_ICLAMPER_E_FIBRA_GOLA_CAMC3_17"
+        ]
+      ],
+      "grooves": [
+        [
+          0.0,
+          179.0,
+          428.0,
+          181.0,
+          "SULCO_T1_T2"
+        ],
+        [
+          0.0,
+          338.0,
+          428.0,
+          340.0,
+          "SULCO_T2_T3"
+        ],
+        [
+          0.0,
+          517.0,
+          428.0,
+          519.0,
+          "SULCO_T3_T4"
+        ],
+        [
+          167.9,
+          0.0,
+          169.9,
+          574.9,
+          "SULCO_COL_F_M"
+        ],
+        [
+          250.4,
+          0.0,
+          252.4,
+          574.9,
+          "SULCO_COL_M_R"
         ]
       ],
       "circles": [
         [
           314.0,
-          274.0,
+          269.0,
           38.0
         ],
         [
           156.0,
-          240.0,
+          235.0,
           38.0
         ],
         [
+          392.0,
+          14.0,
+          9.0
+        ],
+        [
           278.25,
-          238.25,
+          233.25,
           1.75
         ],
         [
           278.25,
-          309.75,
+          304.75,
           1.75
         ],
         [
           349.75,
-          238.25,
+          233.25,
           1.75
         ],
         [
           349.75,
-          309.75,
+          304.75,
           1.75
         ],
         [
           120.25,
-          204.25,
+          199.25,
           1.75
         ],
         [
           120.25,
-          275.75,
+          270.75,
           1.75
         ],
         [
           191.75,
-          204.25,
+          199.25,
           1.75
         ],
         [
           191.75,
-          275.75,
+          270.75,
           1.75
-        ],
-        [
-          14.0,
-          8.0,
-          1.6
-        ],
-        [
-          14.0,
-          558.0,
-          1.6
-        ],
-        [
-          147.3,
-          8.0,
-          1.6
-        ],
-        [
-          147.3,
-          558.0,
-          1.6
-        ],
-        [
-          280.7,
-          8.0,
-          1.6
-        ],
-        [
-          280.7,
-          558.0,
-          1.6
-        ],
-        [
-          414.0,
-          8.0,
-          1.6
-        ],
-        [
-          414.0,
-          558.0,
-          1.6
-        ],
-        [
-          8.0,
-          148.5,
-          1.6
-        ],
-        [
-          420.0,
-          148.5,
-          1.6
-        ],
-        [
-          8.0,
-          283.0,
-          1.6
-        ],
-        [
-          420.0,
-          283.0,
-          1.6
-        ],
-        [
-          8.0,
-          417.5,
-          1.6
-        ],
-        [
-          420.0,
-          417.5,
-          1.6
         ]
       ],
-      "funcao": "Concentra 100% da manutenção, portas opacas com dobradiça oculta/ímãs, exaustão direta da Fonte 135 W (FAN2), FAN1 e Painel I/O na placa oposta ao roteador!"
+      "funcao": "Alinha as 2 portas traseiras exatamente à grade suíça (ColR T1 e T3) e inclui a SAÍDA DO CABO ÚNICO AC DO FILTRO DE LINHA iCLAMPER + FIBRA ÓPTICA no pé da traseira (Y=+64..+98 mm, Z=21..49 mm) com gola 3D CAMC3-17!"
     },
     {
       "id": "LASER-05",
-      "fname": "CHAPA_05_Coroa_Superior_Flutuante_AcrilicoOpaco_4mm_294x436mm.dxf",
-      "nome": "Coroa Superior Arquitetural (Tampa Lisa 294×436 + Saia 18 mm · Exaustão pela Sombra 8 mm)",
-      "material": "Acrílico Cast Opaco Fosco Off-White #ECEAE4 (4,0 mm · Topo 100% Liso sem Furos!)",
+      "fname": "CHAPA_05_Coroa_21mm_GradeSuica_6Paineis_AcrilicoOpaco_4mm_294x436mm.dxf",
+      "nome": "Coroa Superior 21 mm (Tampa 294×436 c/ Sulcos das 6 Placas REV7.1 + Saia 17 mm)",
+      "material": "Acrílico Cast Opaco Fosco #ECEAE4 (4,0 mm · Topo 100% Liso c/ Grade Suíça)",
       "espessura_mm": 4.0,
       "w": 294.0,
       "h": 436.0,
       "rects": [],
+      "grooves": [
+        [
+          147.0,
+          0.0,
+          149.0,
+          436.0,
+          "SULCO_COROA_X_MID"
+        ],
+        [
+          0.0,
+          171.0,
+          294.0,
+          173.0,
+          "SULCO_COROA_Y_FM"
+        ],
+        [
+          0.0,
+          293.0,
+          294.0,
+          295.0,
+          "SULCO_COROA_Y_MR"
+        ]
+      ],
       "circles": [],
-      "funcao": "Tampa superior monolítica 100% lisa e opaca; o ar quente dos blowers sai discretamente pela fresta negativa preta de 8 mm ao redor de todo o perímetro"
+      "funcao": "Mantém a altura exata de 21 mm da coroa REV7.1 com os sulcos retangulares característicos no topo, flutuando sobre a sombra de 8 mm"
     },
     {
       "id": "LASER-06",
-      "fname": "CHAPA_06_TetoInterno_Exaustao_e_BasePlinto_AcrilicoPretoOpaco_3mm_286x428mm.dxf",
-      "nome": "Teto Interno Recuado (Z=582) + Base Plinto Flutuante (Z=0..16 · Acrílico Preto Opaco)",
-      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Cortar 2×: Base + Teto Interno)",
+      "fname": "CHAPA_06_TetoInterno_e_PlintoFlutuante_AcrilicoPretoOpaco_3mm_286x428mm.dxf",
+      "nome": "Teto Interno Exaustão (Z=595,9) + Plinto Flutuante (Z=0..21 · c/ Passagem Cabo AC)",
+      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Cortar 2×)",
       "espessura_mm": 3.0,
       "w": 286.0,
       "h": 428.0,
@@ -527,108 +737,66 @@
           66.0,
           174.0,
           224.0,
-          "SAIDA_BLOWER_GPU_PARA_FRESTA_8MM"
+          "SAIDA_BLOWER_GPU_FRESTA_8MM"
         ],
         [
           130.0,
           232.0,
           174.0,
           368.0,
-          "SAIDA_BLOWER_CPU_PARA_FRESTA_8MM"
+          "SAIDA_BLOWER_CPU_FRESTA_8MM"
+        ],
+        [
+          16.0,
+          376.0,
+          46.0,
+          412.0,
+          "GOLA_PLINTO_SAIDA_CABO_AC_ICLAMPER_E_FIBRA"
         ]
       ],
-      "circles": [
-        [
-          14.0,
-          8.0,
-          1.6
-        ],
-        [
-          14.0,
-          420.0,
-          1.6
-        ],
-        [
-          143.0,
-          8.0,
-          1.6
-        ],
-        [
-          143.0,
-          420.0,
-          1.6
-        ],
-        [
-          272.0,
-          8.0,
-          1.6
-        ],
-        [
-          272.0,
-          420.0,
-          1.6
-        ],
-        [
-          8.0,
-          147.3,
-          1.6
-        ],
-        [
-          278.0,
-          147.3,
-          1.6
-        ],
-        [
-          8.0,
-          280.7,
-          1.6
-        ],
-        [
-          278.0,
-          280.7,
-          1.6
-        ]
-      ],
-      "funcao": "Cria a sombra preta contínua da fresta de 8 mm no topo (por onde sai o calor) e do plinto flutuante de 13 mm na base (por onde entra o ar frio)"
+      "grooves": [],
+      "circles": [],
+      "funcao": "Recessos pretos opacos da fresta de 8 mm superior e do plinto flutuante basal (com canal de saída do cabo AC + fibra pelo rodapé traseiro)"
     },
     {
       "id": "LASER-07",
-      "fname": "CHAPA_07_Piso_PretoOpaco_4FendasU_Z68_Acrilico_3mm_62x178mm.dxf",
-      "nome": "Piso Preto Opaco da Baía RF em Z = 68 mm (4 Fendas U Reais · Esconde Corpo do MR30G)",
+      "fname": "CHAPA_07_Piso_PretoOpaco_4FendasU_Z68_Acrilico_3mm_64x238mm.dxf",
+      "nome": "Piso Preto Opaco da Baía RF em Z = 68 mm (4 Fendas U Reais · Oculta Corpo MR30G)",
       "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · 100% RF-OK)",
       "espessura_mm": 3.0,
-      "w": 62.0,
-      "h": 178.0,
+      "w": 64.0,
+      "h": 237.5,
       "rects": [
         [
           6.2,
-          9.3,
-          62.0,
-          33.3,
+          42.8,
+          64.0,
+          66.8,
           "FENDA_U_Side_Left"
         ],
         [
           26.7,
-          39.8,
-          62.0,
-          55.8,
+          73.2,
+          64.0,
+          89.2,
           "FENDA_U_Rear_Left"
         ],
         [
           26.7,
-          118.8,
-          62.0,
-          134.8,
+          152.2,
+          64.0,
+          168.2,
           "FENDA_U_Rear_Right"
         ],
         [
           6.2,
-          141.2,
-          62.0,
-          165.2,
+          174.7,
+          64.0,
+          198.7,
           "FENDA_U_Side_Right"
         ]
       ],
+      "grooves": [],
       "circles": [
         [
           8.0,
@@ -637,190 +805,94 @@
         ],
         [
           8.0,
-          168.0,
+          227.5,
           1.6
         ]
       ],
-      "funcao": "Esconde 100% do roteador, cabos e guias abaixo de Z=68 mm, exibindo apenas as 4 antenas sobre o palco preto opaco"
+      "funcao": "Esconde 100% do corpo e trilhos do roteador abaixo de Z=68 mm em toda a extensão da alcova RF (Y=-123,5..+114)"
     },
     {
       "id": "LASER-08",
-      "fname": "CHAPA_08_Prateleiras_Z194_e_Z357_AcrilicoPretoOpaco_3mm_286x428mm.dxf",
-      "nome": "Prateleiras Divisórias Internas (Z=194 e Z=357 · c/ Nervura em T p/ Rigidez)",
-      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Cortar 2× + 2 Nervuras 286×24 mm)",
+      "fname": "CHAPA_08_Prateleiras_Z194_e_Z357_c_DescidaCaboAC_AcrilicoPreto_3mm.dxf",
+      "nome": "Prateleiras Divisórias (Z=194 e Z=357 · c/ Descida Dedicada do Cabo AC do iCLAMPER)",
+      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Cortar 2× + 2 Nervuras em T)",
       "espessura_mm": 3.0,
       "w": 286.0,
       "h": 428.0,
       "rects": [
         [
-          226.0,
-          224.0,
+          223.0,
+          190.5,
           286.0,
           428.0,
-          "VAO_LIVRE_4_ANTENAS_Z194"
+          "VAO_LIVRE_ALCOVA_ANTENAS_Z194"
+        ],
+        [
+          24.0,
+          378.0,
+          74.0,
+          422.0,
+          "DESCIDA_VERTICAL_CABO_AC_FILTRO_ICLAMPER_Z222_P_Z16"
         ],
         [
           18.0,
           22.0,
           92.0,
           96.0,
-          "PASSA_CABOS_INTERNO_DC_FIBRA"
+          "PASSA_CABOS_DC_E_FIBRA"
         ]
       ],
-      "circles": [
-        [
-          14.0,
-          8.0,
-          1.6
-        ],
-        [
-          14.0,
-          420.0,
-          1.6
-        ],
-        [
-          143.0,
-          8.0,
-          1.6
-        ],
-        [
-          143.0,
-          420.0,
-          1.6
-        ],
-        [
-          272.0,
-          8.0,
-          1.6
-        ],
-        [
-          272.0,
-          420.0,
-          1.6
-        ],
-        [
-          8.0,
-          147.3,
-          1.6
-        ],
-        [
-          278.0,
-          147.3,
-          1.6
-        ],
-        [
-          8.0,
-          280.7,
-          1.6
-        ],
-        [
-          278.0,
-          280.7,
-          1.6
-        ]
-      ],
-      "funcao": "Separam os 3 níveis internos com rigidez estrutural e passagem limpa de cabos"
+      "grooves": [],
+      "circles": [],
+      "funcao": "Inclui o recorte exato em Y=+66..+110 mm na prateleira Z=194 para o cabo AC do iCLAMPER descer reto do boot (Z=222) até a gola traseira!"
     },
     {
       "id": "LASER-09",
-      "fname": "CHAPA_09_CamaraEscura_5Frisos_e_FundoBaiaRF_AcrilicoPretoOpaco_3mm_280x540mm.dxf",
-      "nome": "Câmara Escura Preta Opaca Atrás dos 5 Frisos Braun + Paredes Pretas da Baía RF",
-      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Bloqueio Óptico Total)",
+      "fname": "CHAPA_09_CamaraEscura_5Frisos_e_BaiaRF_AcrilicoPretoOpaco_3mm.dxf",
+      "nome": "Câmara Escura Preta Opaca Atrás dos 5 Frisos + Paredes Pretas da Baía RF (Z=24..357)",
+      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Bloqueio Óptico 100%)",
       "espessura_mm": 3.0,
-      "w": 280.0,
-      "h": 540.0,
+      "w": 420.0,
+      "h": 560.0,
       "rects": [
         [
           0.0,
           0.0,
-          128.0,
-          535.0,
+          148.0,
+          550.0,
           "ANTEPARO_PRETO_OPACO_ATRAS_5_FRISOS_RECUO_14MM"
         ],
         [
-          136.0,
+          156.0,
           0.0,
-          280.0,
-          238.0,
-          "PAREDE_FUNDO_PRETO_OPACO_BAIA_RF"
+          397.0,
+          333.0,
+          "PAREDE_FUNDO_PRETO_BAIA_RF_241x333"
         ],
         [
-          136.0,
-          248.0,
-          280.0,
-          486.0,
-          "PAREDE_LATERAL_E_TETO_PRETO_BAIA_RF"
+          156.0,
+          341.0,
+          400.0,
+          410.0,
+          "TETO_PRETO_BAIA_RF_67x241"
+        ],
+        [
+          156.0,
+          418.0,
+          400.0,
+          487.0,
+          "PAREDE_ESQ_BAIA_RF_67x333"
         ]
       ],
-      "circles": [
-        [
-          14.0,
-          8.0,
-          1.6
-        ],
-        [
-          14.0,
-          532.0,
-          1.6
-        ],
-        [
-          140.0,
-          8.0,
-          1.6
-        ],
-        [
-          140.0,
-          532.0,
-          1.6
-        ],
-        [
-          266.0,
-          8.0,
-          1.6
-        ],
-        [
-          266.0,
-          532.0,
-          1.6
-        ],
-        [
-          8.0,
-          142.0,
-          1.6
-        ],
-        [
-          272.0,
-          142.0,
-          1.6
-        ],
-        [
-          8.0,
-          270.0,
-          1.6
-        ],
-        [
-          272.0,
-          270.0,
-          1.6
-        ],
-        [
-          8.0,
-          398.0,
-          1.6
-        ],
-        [
-          272.0,
-          398.0,
-          1.6
-        ]
-      ],
-      "funcao": "Garante estética 100% opaca: atrás dos 5 frisos só se vê profundidade preta fosca (ar entra pelas bordas internas recuadas 14 mm sem vazar visão!)"
+      "grooves": [],
+      "circles": [],
+      "funcao": "Bloqueio óptico total atrás dos 4 andares de 5 frisos cápsula de 8 mm e alcova preta RF completa até Z=357 mm!"
     },
     {
       "id": "LASER-10",
       "fname": "CHAPA_10_Cassete_LA_L161P_8FurosH1H21_e_Bandejas_AcrilicoPreto_3mm.dxf",
-      "nome": "Cassete Vertical LA-L161P (8 Furos Exatos H1..H21) + Bandeja MR30G + Bandeja iCLAMPER 290 mm",
-      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm · Precisão ±0,1 mm no Laser)",
+      "nome": "Cassete LA-L161P (8 Furos Exatos H1..H21) + Bandeja MR30G + Bandeja iCLAMPER 290 mm",
+      "material": "Acrílico Cast Opaco Preto Fosco #141619 (3,0 mm)",
       "espessura_mm": 3.0,
       "w": 295.0,
       "h": 425.0,
@@ -837,16 +909,17 @@
           205.0,
           168.0,
           345.0,
-          "BANDEJA_ROTEADOR_MR30G_168x140mm"
+          "BANDEJA_MR30G_168x140mm"
         ],
         [
           0.0,
           355.0,
           290.0,
           425.0,
-          "BANDEJA_TRASEIRA_ICLAMPER_290x70mm"
+          "BANDEJA_ICLAMPER_290x70mm"
         ]
       ],
+      "grooves": [],
       "circles": [
         [
           280.0,
@@ -914,13 +987,13 @@
           1.75
         ]
       ],
-      "funcao": "Furação exata da placa-mãe para 8 espaçadores comerciais de latão M2.5×14 mm e bandejas rígidas sem empenamento"
+      "funcao": "Furação exata da placa-mãe para 8 espaçadores comerciais de latão M2.5×14 mm e bandejas rígidas"
     },
     {
       "id": "LASER-11",
       "fname": "CHAPA_11_Base_Aluminio_2mm_Fonte_135W_220x150mm.dxf",
-      "nome": "Base Metálica Dissipadora da Fonte Lenovo 135 W (Exaustão Traseira -X · Zero PC-ABS FR)",
-      "material": "Chapa de Alumínio 2,0 mm (dissipação passiva + fluxo direto p/ FAN2 na traseira -X)",
+      "nome": "Base Metálica Dissipadora da Fonte Lenovo 135 W (Exaustão Traseira -X)",
+      "material": "Chapa de Alumínio 2,0 mm (dissipação passiva + exaustão direta p/ FAN2 traseiro)",
       "espessura_mm": 2.0,
       "w": 220.0,
       "h": 150.0,
@@ -930,9 +1003,10 @@
           36.0,
           172.0,
           114.0,
-          "APOIO_TERMICO_FONTE_135W_118x77mm"
+          "APOIO_TERMICO_FONTE_135W"
         ]
       ],
+      "grooves": [],
       "circles": [
         [
           18.0,
@@ -975,7 +1049,7 @@
           1.75
         ]
       ],
-      "funcao": "Dissipa o calor da Fonte 135 W jogando o ar quente direto para a ventoinha FAN2 na face traseira (-X), sem tocar na lateral lisa!"
+      "funcao": "Dissipa o calor da fonte 135 W direto para o FAN2 traseiro (-X) eliminando 100% do PC-ABS FR"
     }
   ]
 }

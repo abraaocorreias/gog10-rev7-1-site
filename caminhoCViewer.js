@@ -3,7 +3,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 /**
- * Visualizador 3D Interativo dedicado ao CAMINHO C v2 (Hibrido: Chapas Laser 3mm + Aluminio + 14 Pecas 3D + Hardware Real).
+ * Visualizador 3D Interativo dedicado ao CAMINHO C v3.1 (100% Acrílico Cast Opaco com Grade Suíça REV7.1 + Saída AC iCLAMPER + 17 Peças 3D + Hardware Real).
  */
 export class CaminhoCViewer {
   constructor(hostEl, onSelectObj) {
@@ -108,6 +108,7 @@ export class CaminhoCViewer {
     if (name.startsWith("LASER04_")) return new THREE.Vector3(-185, 0, 0);    // Blender -X => Three -X
     if (name.startsWith("LASER05_")) return new THREE.Vector3(0, 145, 0);     // Blender +Z => Three +Y
     if (name.startsWith("LASER06_")) return new THREE.Vector3(0, -85, 0);     // Blender -Z => Three -Y
+    if (name.startsWith("CAMC3-17")) return new THREE.Vector3(-140, 0, 0);    // Gola de Saída AC na Traseira -X
     if (layer === "petg_3d") return new THREE.Vector3(55, 35, 0);
     if (layer === "alu_comercial") return new THREE.Vector3(-45, 0, 45);
     if (layer === "laser_int") return new THREE.Vector3(0, -25, 0);
